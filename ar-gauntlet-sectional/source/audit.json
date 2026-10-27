@@ -1,0 +1,14 @@
+{"analysis": [
+ "CLAT 2026 (7 December 2025) replaced Critical Reasoning in Section IV entirely with Analytical Reasoning: about 26 questions in four sets, rated moderate overall.",
+ "The four sets were a letter-transformation puzzle on ELECTROCARDIOGRAPH, logical deduction, blood relations and scheduling. A tabular arrangement set was widely named the paper's biggest time sink.",
+ "Question forms in that paper: positional look-ups, 'which must be true', conditional 'if X, then', and transformation tracking. Options were short names or counts.",
+ "Coaching mocks (CL, LegalEdge, NLTI) answered with circular and linear seating, floor-flat and scheduling sets, and coded blood relations, usually with a unique arrangement and direct look-up questions.",
+ "This paper keeps those forms but raises the bar: mixed facing in every seating set, concentric circles, vacant flats, unused dates, family trees that cannot be fully settled, multi-case arrangements, condition-drop and condition-change questions, and a hard odd-one-out in every set."
+],
+"audit": [
+ "Every set was encoded in a constraint solver that listed every arrangement its conditions allow. Each option of each question was tested against all of them, including the arrangements under any dropped or changed condition.",
+ "Round 1: two independent blind solvers took all 30 questions without the key. All 30 answers matched and none was ambiguous. They flagged eleven questions as easy or shortcut-prone, plus one wording gap. All of them were rewritten or replaced.",
+ "Round 2: a fresh blind solver took the 13 changed questions. Twelve were clean. Q26 had a rival odd-one-out, and Q23 and Q29 had small tells. All three were rebuilt.",
+ "Rounds 3 and 4: fresh solvers re-checked the rebuilt questions. Q26 and Q16 now name the dimension the groups are alike in, so no rival property in that dimension can single out another option.",
+ "Deliberate decoys: Passage II Condition 8 sounds decisive but holds in both valid arrangements. Passages II, III, IV and V each allow more than one valid arrangement on purpose."
+]}

@@ -1,0 +1,214 @@
+<title>AR Gauntlet Sectional</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: exam booklet. Passage sheet on the left, OMR-style answer column on the right; stacks on phones. */
+:root{
+  --paper:#f5f6f8; --sheet:#ffffff; --ink:#18212c; --muted:#5a6573; --rule:#d6dbe2;
+  --accent:#2c5a86; --accent-soft:#e3ecf5; --flag:#a8670f; --flag-soft:#f8ecd9;
+  --good:#1f7a4d; --good-soft:#e1f2e8; --bad:#b3362c; --bad-soft:#f8e3e1;
+  --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#11151b; --sheet:#181e26; --ink:#e4e8ee; --muted:#9aa4b2; --rule:#2c3440;
+  --accent:#7fb0dd; --accent-soft:#1f2f40; --flag:#e0a24a; --flag-soft:#3a2c17;
+  --good:#5cc08d; --good-soft:#17332a; --bad:#ef7b70; --bad-soft:#3d1f1d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#11151b; --sheet:#181e26; --ink:#e4e8ee; --muted:#9aa4b2; --rule:#2c3440;
+  --accent:#7fb0dd; --accent-soft:#1f2f40; --flag:#e0a24a; --flag-soft:#3a2c17;
+  --good:#5cc08d; --good-soft:#17332a; --bad:#ef7b70; --bad-soft:#3d1f1d; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1240px;margin:0 auto}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--rule);
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding-block:12px}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand b{font-family:var(--serif);font-size:20px;font-weight:600;letter-spacing:.01em;text-wrap:balance}
+.brand span{font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.spacer{flex:1}
+.clock{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:18px;padding:4px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--sheet)}
+.btn{border:1px solid var(--rule);background:var(--sheet);border-radius:6px;padding:7px 14px;font-weight:500}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.btn:hover{border-color:var(--accent)}
+nav.tabs{display:flex;gap:6px;overflow-x:auto;padding-block:12px 4px}
+.tab{flex:0 0 auto;border:1px solid var(--rule);background:var(--sheet);border-radius:6px;padding:6px 12px;display:flex;gap:8px;align-items:baseline}
+.tab .n{font-family:var(--serif);font-weight:600}
+.tab .c{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.tab[aria-selected="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:20px;margin-top:12px;align-items:start}
+@media (max-width:860px){.grid{grid-template-columns:minmax(0,1fr)}}
+.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:20px 22px;min-width:0}
+.passage{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px);max-height:calc(100vh - 100px);overflow:auto}
+@media (max-width:860px){.passage{position:static;max-height:none}}
+.kind{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.passage h2{font-family:var(--serif);font-size:22px;margin:4px 0 12px;text-wrap:balance}
+.passage p{font-family:var(--serif);font-size:16px;line-height:1.65;margin:0 0 14px;max-width:68ch}
+.passage ol{font-family:var(--serif);font-size:16px;line-height:1.6;margin:0;padding-left:1.8em;display:grid;gap:6px;max-width:68ch}
+.passage ol li::marker{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.qs{display:grid;gap:16px;min-width:0}
+.q{background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:16px 18px;min-width:0}
+.q.flagged{border-color:var(--flag);box-shadow:inset 3px 0 0 var(--flag)}
+.qhead{display:flex;gap:10px;align-items:flex-start}
+.qnum{font-family:var(--mono);font-weight:600;color:var(--accent);flex:0 0 auto;padding-top:1px}
+.stem{flex:1;white-space:pre-line;min-width:0}
+.flagbtn{flex:0 0 auto;border:1px solid var(--rule);background:transparent;border-radius:5px;font-size:12px;padding:2px 8px;color:var(--muted)}
+.flagbtn[aria-pressed="true"]{border-color:var(--flag);background:var(--flag-soft);color:var(--flag)}
+.opts{display:grid;gap:6px;margin-top:12px}
+.opt{display:flex;gap:10px;align-items:flex-start;text-align:left;border:1px solid var(--rule);background:transparent;border-radius:6px;padding:8px 10px;width:100%}
+.opt:hover{border-color:var(--accent)}
+.bub{flex:0 0 26px;height:26px;border-radius:50%;border:1.5px solid var(--muted);display:grid;place-items:center;font-family:var(--mono);font-size:12px;font-weight:600}
+.opt[aria-checked="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.opt[aria-checked="true"] .bub{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.opt.right{border-color:var(--good);background:var(--good-soft)}
+.opt.right .bub{background:var(--good);border-color:var(--good);color:var(--sheet)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.wrong .bub{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.clear{margin-top:8px;font-size:12px;color:var(--muted);background:none;border:none;padding:0;text-decoration:underline}
+.expl{margin-top:12px;border-top:1px dashed var(--rule);padding-top:10px;font-size:14px;display:grid;gap:6px}
+.expl b{font-weight:600}
+.conv{font-size:13px;color:var(--muted);margin:10px 0 0;display:grid;gap:2px}
+.navrow{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
+.modal{position:fixed;inset:0;background:color-mix(in srgb,var(--ink) 40%,transparent);display:grid;place-items:center;z-index:20;padding:16px}
+.modal .box{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:20px;max-width:420px;width:100%;display:grid;gap:12px}
+.score{display:flex;flex-wrap:wrap;gap:24px;align-items:baseline;margin-top:12px}
+.score .big{font-family:var(--serif);font-size:40px;font-weight:600}
+.score .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tbl{overflow-x:auto;margin-top:14px}
+table{border-collapse:collapse;font-size:13px;width:100%;font-variant-numeric:tabular-nums}
+th,td{border-bottom:1px solid var(--rule);padding:6px 8px;text-align:left}
+th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.ok{color:var(--good);font-weight:600}.no{color:var(--bad);font-weight:600}.sk{color:var(--muted)}
+.solution{margin-top:10px;font-family:var(--serif);font-size:15px;background:var(--accent-soft);border-radius:6px;padding:10px 12px}
+@media (prefers-reduced-motion:no-preference){.opt{transition:background .12s,border-color .12s}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><b>AR Gauntlet Sectional</b><span>30 questions · 6 sets · no time limit</span></div>
+    <div class="spacer"></div>
+    <div class="clock" id="clock" title="Time spent">00:00:00</div>
+    <button class="btn" id="pauseBtn" type="button">Pause</button>
+    <button class="btn primary" id="submitBtn" type="button">Submit</button>
+  </header>
+  <nav class="tabs" id="tabs" role="tablist"></nav>
+  <div id="exam" class="grid">
+    <section class="sheet passage" id="passage" aria-live="polite"></section>
+    <section class="qs" id="questions"></section>
+  </div>
+  <section id="results" hidden></section>
+</div>
+<div class="modal" id="confirm" hidden>
+  <div class="box" role="dialog" aria-modal="true" aria-labelledby="cTitle">
+    <b id="cTitle" style="font-family:var(--serif);font-size:18px">Submit the sectional?</b>
+    <div id="cBody" style="color:var(--muted)"></div>
+    <div style="display:flex;gap:10px;justify-content:flex-end">
+      <button class="btn" id="cNo" type="button">Keep working</button>
+      <button class="btn primary" id="cYes" type="button">Submit and see results</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA = __DATA__;
+const KEY = JSON.parse(decodeURIComponent(escape(atob(__KEY__.split('').reverse().join('')))));
+const LET = 'ABCD';
+const STORE = 'ar-gauntlet-v1';
+let st = {ans:{}, flag:{}, elapsed:0, running:true, done:false, cur:0};
+try { const s = JSON.parse(localStorage.getItem(STORE)||'null'); if (s && s.ver===DATA.ver) st = Object.assign(st, s); } catch(e){}
+const save = () => { try { localStorage.setItem(STORE, JSON.stringify(Object.assign({ver:DATA.ver}, st))); } catch(e){} };
+const qIndex = []; DATA.passages.forEach((p,pi)=>p.qs.forEach((q,qi)=>qIndex.push([pi,qi])));
+const gnum = (pi,qi) => DATA.passages.slice(0,pi).reduce((a,p)=>a+p.qs.length,0)+qi+1;
+const esc = s => s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+function fmt(t){t=Math.floor(t);const h=Math.floor(t/3600),m=Math.floor(t%3600/60),s=t%60;return [h,m,s].map(x=>String(x).padStart(2,'0')).join(':')}
+let last = Date.now();
+setInterval(()=>{const now=Date.now(); if(st.running && !st.done){st.elapsed += (now-last)/1000;} last=now;
+  document.getElementById('clock').textContent=fmt(st.elapsed); if(Math.floor(st.elapsed)%5===0) save();},1000);
+document.getElementById('pauseBtn').onclick=()=>{ if(st.done) return; st.running=!st.running;
+  document.getElementById('pauseBtn').textContent=st.running?'Pause':'Resume'; save(); };
+
+function renderTabs(){
+  const t=document.getElementById('tabs'); t.innerHTML='';
+  DATA.passages.forEach((p,pi)=>{
+    const n=p.qs.length, a=p.qs.filter((_,qi)=>st.ans[gnum(pi,qi)]!==undefined).length;
+    const b=document.createElement('button'); b.type='button'; b.className='tab'; b.setAttribute('role','tab');
+    b.setAttribute('aria-selected', String(pi===st.cur));
+    b.innerHTML=`<span class="n">${['I','II','III','IV','V','VI'][pi]}</span><span class="c">${a}/${n}</span>`;
+    b.onclick=()=>{st.cur=pi; save(); render();};
+    t.appendChild(b);
+  });
+}
+function render(){
+  renderTabs();
+  const p=DATA.passages[st.cur], pi=st.cur;
+  const ps=document.getElementById('passage');
+  ps.innerHTML=`<div class="kind">${esc(p.kind)}</div><h2>${esc(p.title)}</h2><p>${esc(p.intro)}</p><ol>${p.conds.map(c=>`<li>${esc(c)}</li>`).join('')}</ol>`+
+    (pi===0?`<div class="conv"><b style="color:var(--ink)">Conventions for every set</b>${DATA.conventions.map(c=>`<span>· ${esc(c)}</span>`).join('')}</div>`:'')+
+    (st.done?`<div class="solution"><b>Solution.</b> ${esc(KEY.sol[pi])}</div>`:'');
+  const qs=document.getElementById('questions'); qs.innerHTML='';
+  p.qs.forEach((q,qi)=>{
+    const n=gnum(pi,qi), k=KEY.q[n-1];
+    const d=document.createElement('article'); d.className='q'+(st.flag[n]?' flagged':'');
+    let html=`<div class="qhead"><span class="qnum">Q${n}</span><div class="stem">${esc(q.stem)}</div>`+
+      (st.done?'':`<button type="button" class="flagbtn" aria-pressed="${!!st.flag[n]}" data-flag="${n}">${st.flag[n]?'Flagged':'Flag'}</button>`)+`</div><div class="opts" role="radiogroup">`;
+    q.opts.forEach((o,oi)=>{
+      let cls='opt'; if(st.done){ if(oi===k.a) cls+=' right'; else if(st.ans[n]===oi) cls+=' wrong'; }
+      html+=`<button type="button" class="${cls}" role="radio" aria-checked="${st.ans[n]===oi}" data-q="${n}" data-o="${oi}" ${st.done?'disabled':''}><span class="bub">${LET[oi]}</span><span>${esc(o)}</span></button>`;
+    });
+    html+='</div>';
+    if(!st.done && st.ans[n]!==undefined) html+=`<button type="button" class="clear" data-clear="${n}">Clear answer</button>`;
+    if(st.done){
+      const you = st.ans[n]===undefined?'not attempted':LET[st.ans[n]];
+      html+=`<div class="expl"><div><b>Your answer:</b> ${you} · <b>Correct:</b> ${LET[k.a]}</div><div><b>Why.</b> ${esc(k.why)}</div><div><b>The trap.</b> ${esc(k.trap)}</div></div>`;
+    }
+    d.innerHTML=html; qs.appendChild(d);
+  });
+  const nav=document.createElement('div'); nav.className='navrow';
+  nav.innerHTML=`<button class="btn" type="button" id="prevP" ${pi===0?'disabled':''}>Previous set</button><button class="btn" type="button" id="nextP" ${pi===DATA.passages.length-1?'disabled':''}>Next set</button>`;
+  qs.appendChild(nav);
+  document.getElementById('prevP').onclick=()=>{st.cur--;save();render();scrollTo(0,0)};
+  document.getElementById('nextP').onclick=()=>{st.cur++;save();render();scrollTo(0,0)};
+  qs.querySelectorAll('[data-o]').forEach(b=>b.onclick=()=>{st.ans[+b.dataset.q]=+b.dataset.o; save(); render();});
+  qs.querySelectorAll('[data-flag]').forEach(b=>b.onclick=()=>{const n=+b.dataset.flag; st.flag[n]=!st.flag[n]; save(); render();});
+  qs.querySelectorAll('[data-clear]').forEach(b=>b.onclick=()=>{delete st.ans[+b.dataset.clear]; save(); render();});
+}
+function results(){
+  const r=document.getElementById('results'); r.hidden=false;
+  let right=0,wrong=0,skip=0, rows='';
+  const per=DATA.passages.map(()=>[0,0]);
+  qIndex.forEach(([pi,qi],i)=>{const n=i+1,k=KEY.q[i],a=st.ans[n];
+    let res; if(a===undefined){skip++;res='<span class="sk">Skipped</span>'} else if(a===k.a){right++;per[pi][0]++;res='<span class="ok">Right</span>'} else {wrong++;res='<span class="no">Wrong</span>'}
+    per[pi][1]++;
+    rows+=`<tr><td>Q${n}</td><td>${['I','II','III','IV','V','VI'][pi]}</td><td>${a===undefined?'–':LET[a]}</td><td>${LET[k.a]}</td><td>${res}</td></tr>`;});
+  const score=right-0.25*wrong;
+  r.innerHTML=`<div class="sheet" style="margin-top:16px"><div class="kind">Results</div>
+   <div class="score"><div><div class="big">${score.toFixed(2)}</div><div class="lbl">Score out of 30 (+1 / −0.25)</div></div>
+   <div><div class="big">${right}</div><div class="lbl">Right</div></div><div><div class="big">${wrong}</div><div class="lbl">Wrong</div></div>
+   <div><div class="big">${skip}</div><div class="lbl">Skipped</div></div><div><div class="big" style="font-family:var(--mono);font-size:30px">${fmt(st.elapsed)}</div><div class="lbl">Time taken</div></div></div>
+   <div class="tbl"><table><thead><tr><th>Set</th>${DATA.passages.map((_,i)=>`<th>${['I','II','III','IV','V','VI'][i]}</th>`).join('')}</tr></thead>
+   <tbody><tr><td>Right</td>${per.map(x=>`<td>${x[0]}/${x[1]}</td>`).join('')}</tr></tbody></table></div>
+   <div class="tbl"><table><thead><tr><th>Q</th><th>Set</th><th>You</th><th>Key</th><th>Result</th></tr></thead><tbody>${rows}</tbody></table></div>
+   <p style="color:var(--muted);font-size:13px;margin-top:12px">Open any set above to read the solution, the reasoning for each answer and the trap in each question.</p>
+   <button class="btn" type="button" id="resetBtn">Start a fresh attempt</button></div>`;
+  document.getElementById('resetBtn').onclick=()=>{st={ans:{},flag:{},elapsed:0,running:true,done:false,cur:0};save();r.hidden=true;render();scrollTo(0,0)};
+}
+const modal=document.getElementById('confirm');
+document.getElementById('submitBtn').onclick=()=>{ if(st.done){results(); document.getElementById('results').scrollIntoView(); return;}
+  const a=Object.keys(st.ans).length, f=Object.values(st.flag).filter(Boolean).length;
+  document.getElementById('cBody').textContent=`You have answered ${a} of 30 questions${f?` and flagged ${f}`:''}. After submitting you will see the key, so this attempt cannot be changed.`;
+  modal.hidden=false; document.getElementById('cYes').focus(); };
+document.getElementById('cNo').onclick=()=>{modal.hidden=true};
+document.getElementById('cYes').onclick=()=>{modal.hidden=true; st.done=true; st.running=false; save(); render(); results();
+  document.getElementById('submitBtn').textContent='Results'; document.getElementById('results').scrollIntoView();};
+document.getElementById('pauseBtn').textContent=st.running?'Pause':'Resume';
+if(st.done){document.getElementById('submitBtn').textContent='Results'; render(); results();} else render();
+</script>
