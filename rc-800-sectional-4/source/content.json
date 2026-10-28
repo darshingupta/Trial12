@@ -105,7 +105,7 @@
      "quote": null,
      "after": null,
      "opts": [
-      "Notes people make when abandoning a promise to themselves seldom mention its purpose, yet asked later, most say they dropped it because its purpose was spent.",
+      "Diaries kept as people abandon self-promises show them weighing only their current wishes, yet at that moment most say they are weighing the promise's purpose.",
       "No one other than the person herself is ever in a position to check whether a release she grants herself was granted as promisee rather than merely as promisor.",
       "People break a larger share of the promises they make to themselves than of those they make to friends, though they say they feel worse about breaking the latter.",
       "People who keep their promises to themselves usually do so out of habit, without first stopping to ask whether the promise's purpose still holds."
@@ -117,7 +117,7 @@
       "T"
      ],
      "reasons": [
-      "The claim is that a person can tell whether she is asking 'does the purpose still hold?' or 'do I still feel like it?'. If her notes at the time never raise the purpose, yet afterwards she sincerely reports that the purpose was spent, she has mistaken which question she was asking.",
+      "The claim is that a person can tell whether she is asking 'does the purpose still hold?' or 'do I still feel like it?'. If, at the very moment of deciding, people are asking the second while sincerely saying they are asking the first, they cannot tell which question they are asking.",
       "This repeats the objection's premise ('no one else can inspect the costume'), which the author already grants. It is about outside checking; the claim under attack is about what the person herself can tell.",
       "This adds a comparison between self-promises and promises to others that the passage never makes, and break rates say nothing about whether a person can tell which question she is asking.",
       "This is about why people keep self-promises. The claim under attack is about someone deliberating over a release: whether she can tell which of two questions she is asking."
@@ -218,7 +218,7 @@
      "after": null,
      "opts": [
       "Disciplined people keep more of their promises to themselves than procrastinators do, but only because the promises they make are smaller and easier to keep.",
-      "Those who seldom put off unpleasant tasks keep a far larger share of their promises to themselves than habitual procrastinators manage to keep.",
+      "Procrastinators reminded of a promise's purpose at the moment of temptation break it about as often as those who are not reminded at all.",
       "A procrastinator's promises to himself grow more reliable only after he has learned, by quite other means, to resist the pull of the moment.",
       "Those who most often break their promises to themselves are least able to put a promise's purpose above their feelings, though they make no more such promises."
      ],
@@ -230,7 +230,7 @@
      ],
      "reasons": [
       "The outcome matches (disciplined people keep more self-promises), but the cause is different: easier promises, not a stronger hold on the promisee's standpoint. A case explained by a different mechanism does not support the author's reasoning.",
-      "This supports the claim: self-promises bind best those who need binding least.",
+      "This supports paragraph 4: for the procrastinator the distinction 'describes what he lacks rather than supplying what he needs', so pointing him to the promisee's standpoint does not help.",
       "This supports the last line of paragraph 4: success 'presupposes a strength already there'.",
       "This supports the mechanism: failure goes with a faint promisee's voice."
      ],
@@ -315,7 +315,7 @@
      "quote": null,
      "after": null,
      "opts": [
-      "Had the survivors' protection been genetic, their descendants would have inherited it and resisted the drug better.",
+      "Had the survivors been resistant, their descendants would have inherited that resistance and survived the drug better.",
       "The surviving cells had already been dormant when the penicillin arrived, and so offered the drug nothing that it could corrupt.",
       "Penicillin kills a bacterium only while the cell is building its wall, so the dividing cells are the ones most exposed to the drug.",
       "Bigger had screened the original culture for resistant cells, and found none, before he first added any penicillin to it."
@@ -333,7 +333,7 @@
       "The conclusion rests on the regrowth test, not on any earlier screening. The passage mentions none, and the conclusion would stand without it, because resistant survivors would have shown up when he regrew them."
      ],
      "key": "a",
-     "why": "Negate (a): if a genetic protection need not show up in the descendants, then descendants dying 'as the original had' no longer rules out resistance. So the conclusion depends on (a), and needs nothing about how the culture was prepared.",
+     "why": "Negate (a): if resistance need not show up in the descendants, then descendants dying 'as the original had' no longer rules out resistance. So the conclusion depends on (a), and needs nothing about how the culture was prepared.",
      "src": "AILET 5 Q34 (a related fact picked over the needed premise) and Sectional 2 Q22"
     },
     {
@@ -525,8 +525,8 @@
      "quote": "\"The verdict and the indictment pass each other like trains on parallel tracks, each keeping to its own timetable and neither arriving at the other's station.\"",
      "after": null,
      "opts": [
-      "Metaphor, because the verdict and the indictment are spoken of as trains, an image the author carries on through 'timetable' and 'station'.",
-      "Personification, because two bodies of scholarship are made to travel, keep time and fail to arrive, as though they had purposes of their own.",
+      "Metaphor, because the verdict and the indictment are pictured as trains, an image the author carries on through 'timetable' and 'station'.",
+      "Personification, because two bodies of scholarship are made to keep their own 'timetable' and miss each other's 'station', as if they had purposes.",
       "Simile, because the comparison of the two bodies of work with trains is made explicit with 'like' and then drawn out through 'timetable' and 'station'.",
       "Analogy, because the author argues from how railway timetables are drawn up to how historians ought to choose the comparisons they make."
      ],
@@ -584,7 +584,7 @@
       "a cost imposed, because the critics held that India paid for lines whose gains went largely to others.",
       "an accusation, because the paragraph opens with the 'charge against the railways' that the nationalists pressed.",
       "a judge's instruction to a jury, because the paragraph presents the nationalists' case as an indictment.",
-      "a headlong attack, because the critics went after the railways more persistently than after anything else."
+      "a responsibility entrusted, because the lines were placed in the charge of the British companies that built them."
      ],
      "codes": [
       "K",
@@ -596,7 +596,7 @@
       "'Levied' and the contrast with 'investment' fix the sense: a financial burden placed on India, not an outlay that would repay it.",
       "The clause is true: that is the sense of 'charge' in the paragraph's first sentence. But at the end the word is 'levied' and set against 'investment', which an accusation is not.",
       "The paragraph does use the language of indictment, but nothing is being instructed. 'Levied on it' names a burden imposed on India.",
-      "The clause echoes 'pressed more persistently', but a charge in the sense of an attack is not 'levied on' anyone."
+      "The clause is true to the passage (the lines were 'built by British companies'), but that is the sense of 'in the charge of'. A responsibility is not 'levied on' anyone."
      ],
      "key": "a",
      "why": "The paragraph uses 'charge' twice in two senses. Every reason clause here is true to the passage; only 'levied' and the contrast with 'investment' decide the sense at the end.",
@@ -707,7 +707,7 @@
      "quote": "\"James rewrote several of his early novels for the collected edition [, it left] readers with two texts to choose between.\"",
      "after": null,
      "opts": [
-      ", in so doing it left",
+      ", thereby it left",
       "so as to leave",
       ", thereby leaving",
       "; thereby leaving"
@@ -719,13 +719,13 @@
       "G"
      ],
      "reasons": [
-      "This still joins two independent clauses ('James rewrote…' and 'it left…') with only a comma. 'In so doing' does not cure the comma splice.",
+      "This still joins two independent clauses ('James rewrote…' and 'it left…') with only a comma. 'Thereby' is an adverb, not a conjunction, so it does not cure the comma splice.",
       "This is grammatical but turns the result into James's purpose, which changes the meaning.",
       "'Thereby' + -ing attaches the result to the main clause: James rewrote the novels, and the result was two texts.",
       "A semicolon must be followed by a full clause. 'Thereby leaving readers…' has no subject or finite verb."
      ],
      "key": "c",
-     "why": "The original is a comma splice (', it left'). The fix must express a result without a second subject. ', thereby leaving' does; the semicolon version has no clause after the semicolon, ', in so doing it left' is still a comma splice, and 'so as to leave' changes result into purpose.",
+     "why": "The original is a comma splice (', it left'). The fix must express a result without a second subject. ', thereby leaving' does; the semicolon version has no clause after the semicolon, ', thereby it left' is still a comma splice, and 'so as to leave' changes result into purpose.",
      "src": "Countdown 10 Q69 and Q74 (grammar: comma splice, 'thereby + -ing', infinitive of purpose)"
     },
     {
@@ -738,7 +738,7 @@
       "Detached and analytical, because it sets out the rival editorial doctrines in turn, explaining how each arose and what it claims.",
       "Sceptical and wistful, because it ends by suggesting that for some works no single text, and no display of all of them, can be the work.",
       "Impatient and dismissive, because it finds fault in turn with the final-intention principle, the social theory and the digital promise.",
-      "Exacting but fair-minded, because it separates Greg from his successors and grants the social theory and digital editions their real merits."
+      "Exacting and even-handed, because it separates Greg from his successors and grants the social theory and digital editions their real merits."
      ],
      "codes": [
       "O",
@@ -753,7 +753,7 @@
       "The author distinguishes Greg ('more modest than the uses later made of it') from the hardened principle, says the social theory 'corrects a real naivety' and that the digital 'promise is genuine', and is exacting about what each costs ('smuggled', 'pays for the correction', 'so is what it hides')."
      ],
      "key": "d",
-     "why": "Every reason clause is true; the labels decide. The author is demanding about every position yet gives each its due, Greg included: exacting, but fair-minded.",
+     "why": "Every reason clause is true; the labels decide. The author is demanding about every position yet gives each its due, Greg included: exacting and even-handed.",
      "src": "Countdown 5 Q75 ('detached and analytical' picked for a critical passage) and Sectional 1 (a right word paired with an unsupported second word)"
     },
     {
