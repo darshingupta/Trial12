@@ -1,0 +1,16 @@
+CODES = {
+ "X": ["Absolute word", "The option needs 'every / only / always / never / prove', and the passage never earns it."],
+ "P": ["Part, not the whole", "True of one paragraph, one factor or one event; leaves out what the passage keeps returning to."],
+ "B": ["Too broad", "Turns a claim about this case into a claim about everything of its kind."],
+ "W": ["Wrong weighting", "Ranks two things the passage never ranks, or gives a side point the weight of the thesis."],
+ "A": ["Added idea", "Brings in a cause, motive, effect or comparison the passage never gives."],
+ "N": ["Supported, not the needed link", "True or plausible, but not the premise, evidence or discriminating fact the question asks for (or far too weak to matter)."],
+ "R": ["Someone else's view or an echo", "A view the author reports or rejects, or the passage's own words with the meaning shifted."],
+ "L": ["Mixes up two things", "Contradicts a stated line, swaps two things the passage keeps apart, or reverses a direction."],
+ "E": ["NOT / EXCEPT reversal", "On a NOT, EXCEPT or 'would NOT support' question, this one fits the passage (or is answered by it), so it can't be the answer."],
+ "O": ["Half-right tone", "One word or the explanation fits; the other half doesn't. Includes 'detached… without passing judgment' for a passage that judges."],
+ "F": ["Word, term or figure misread", "The dictionary sense instead of the one the context forces, or the wrong figure of speech."],
+ "G": ["Grammar rule", "Comma splice, faulty 'and + -ing', or 'so as to' turning a result into a purpose."],
+ "T": ["Wrong target", "Bears on a different claim from the one the question asks about."],
+ "M": ["Mechanism mismatch", "Looks like the passage's case, but the reason it works is different."],
+}

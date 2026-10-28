@@ -1,0 +1,790 @@
+{
+ "codes": {
+  "X": [
+   "Absolute word",
+   "The option needs 'every / only / always / never / prove', and the passage never earns it."
+  ],
+  "P": [
+   "Part, not the whole",
+   "True of one paragraph, one factor or one event; leaves out what the passage keeps returning to."
+  ],
+  "B": [
+   "Too broad",
+   "Turns a claim about this case into a claim about everything of its kind."
+  ],
+  "W": [
+   "Wrong weighting",
+   "Ranks two things the passage never ranks, or gives a side point the weight of the thesis."
+  ],
+  "A": [
+   "Added idea",
+   "Brings in a cause, motive, effect or comparison the passage never gives."
+  ],
+  "N": [
+   "Supported, not the needed link",
+   "True or plausible, but not the premise, evidence or discriminating fact the question asks for (or far too weak to matter)."
+  ],
+  "R": [
+   "Someone else's view or an echo",
+   "A view the author reports or rejects, or the passage's own words with the meaning shifted."
+  ],
+  "L": [
+   "Mixes up two things",
+   "Contradicts a stated line, swaps two things the passage keeps apart, or reverses a direction."
+  ],
+  "E": [
+   "NOT / EXCEPT reversal",
+   "On a NOT, EXCEPT or 'would NOT support' question, this one fits the passage (or is answered by it), so it can't be the answer."
+  ],
+  "O": [
+   "Half-right tone",
+   "One word or the explanation fits; the other half doesn't. Includes 'detached… without passing judgment' for a passage that judges."
+  ],
+  "F": [
+   "Word, term or figure misread",
+   "The dictionary sense instead of the one the context forces, or the wrong figure of speech."
+  ],
+  "G": [
+   "Grammar rule",
+   "Comma splice, faulty 'and + -ing', or 'so as to' turning a result into a purpose."
+  ],
+  "T": [
+   "Wrong target",
+   "Bears on a different claim from the one the question asks about."
+  ],
+  "M": [
+   "Mechanism mismatch",
+   "Looks like the passage's case, but the reason it works is different."
+  ]
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "label": "Passage 1",
+   "kind": "Philosophy · the ethics of promising",
+   "text": [
+    "Asha promises herself that she will finish restoring her father's fishing boat before the monsoon. In August, with the hull half-caulked, she stops. Has she broken a promise, or merely changed her mind? The sceptic answers that nothing more than a change of mind was ever possible. Hobbes put the point with characteristic economy while explaining why a sovereign cannot be bound by his own laws: he that can bind can release, and therefore he that is bound to himself only is not bound. If the person who holds a promise is the person who owes it, the power to cancel the obligation lies with the very party it was meant to constrain, and an obligation that the obligor may cancel at pleasure constrains nothing. A promise to oneself, on this view, is a resolution in borrowed clothes: a statement of present intention, dignified by a vocabulary that implies a creditor where there is none.",
+    "The argument is tidier than it looks, because it passes silently from the identity of persons to the identity of standpoints. Even between two people, not every utterance of 'I release you' releases. A release given because the promisee has been worn down, or deceived about what the promise protected, is defective, and the defect lies not in who speaks the words but in whether they are spoken from the position the promise was meant to secure, that of the party whose interest it serves. Within a single life those positions can come apart. Asha in August is both the one burdened by the promise and the one for whose sake it was made, and whether she has been released is not settled by noting that both roles are hers. It is settled by asking in which role she decided. 'I would rather not' is the voice of the promisor; 'the boat is no longer worth saving' may be the voice of the promisee. Only the second releases.",
+    "An objection presses at once. If both roles are mine, nothing prevents me from dressing the promisor's reluctance in the promisee's language, and since no one else can inspect the costume, the distinction does no work. But the objection proves too much. Releases between persons are seldom inspected either; we accept a friend's 'never mind' without inquiring into its sincerity, and the difference between a free release and an extracted one is not thereby made idle. The distinction's proper home is not the tribunal but deliberation. Someone who asks whether the purpose of a promise still holds is asking a different question from someone who asks whether she still feels like keeping it, and she can usually tell which question she is asking, even when she would prefer not to know.",
+    "This defence has a price, and it should be paid openly. If self-promises bind only those able to occupy the promisee's standpoint against the pull of present inclination, they bind most reliably the people who least need binding. The procrastinator who promises himself to begin his thesis on Monday is precisely the person in whom the promisee's voice is likely to be faint, and for him the distinction I have drawn describes what he lacks rather than supplying what he needs. Self-promising, so understood, is less a technique for overcoming weakness than a practice whose success presupposes a strength already there.",
+    "Harder to settle is what, if anything, the defaulter has done wrong. When I break a promise to you, I wrong you; there is a claimant whose grievance does not depend on my feelings about it. When Asha abandons the boat for reasons that are hers only as promisor, there is no second party whose complaint survives her indifference. One may say that she has damaged her capacity to rely on her own word, so that her later promises to herself will carry less weight. That is true, but it makes the obligation's force derivative of its usefulness, which is the very reduction the sceptic offered at the start. The distinction between deciding as promisor and deciding as promisee survives the objection; whether what it distinguishes still deserves the name of a promise is another matter."
+   ],
+   "qs": [
+    {
+     "n": 1,
+     "type": "Main idea",
+     "stem": "Which of the following best captures the central idea of the passage?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "Since only those able to take the promisee's standpoint against inclination are bound by self-promises, such promises bind best the people who least need binding.",
+      "Because whoever holds a promise to himself can cancel it at pleasure, such a promise is only a resolution, though it may still be useful to make one.",
+      "The sceptic's case against self-promising confuses one person with one standpoint, though correcting it leaves open whether what binds is still a promise.",
+      "Whether a release from an obligation counts depends on the standpoint from which it is given, though in practice no outsider can tell which standpoint that was."
+     ],
+     "codes": [
+      "P",
+      "R",
+      "K",
+      "B"
+     ],
+     "reasons": [
+      "This is paragraph 4 alone, the 'price' of the defence. It drops the sceptic's argument, the distinction itself and the open question in paragraph 5.",
+      "This is the sceptic's view from paragraph 1 with a concession attached. The author calls the argument 'tidier than it looks' and spends paragraph 2 rebutting it; usefulness comes up in paragraph 5 only as a worry about what the obligation rests on.",
+      "Paragraph 2 says the argument 'passes silently from the identity of persons to the identity of standpoints'; paragraphs 3 and 4 defend and price that reply; paragraph 5 ends: 'whether what it distinguishes still deserves the name of a promise is another matter.'",
+      "This lifts paragraph 2's point into a rule about obligations in general and adds paragraph 3's concession, but it drops the passage's subject, promises to oneself, along with the price in paragraph 4 and the open question in paragraph 5."
+     ],
+     "key": "c",
+     "why": "The passage moves from the sceptic's argument (para 1) to the author's diagnosis of it (para 2), defends that diagnosis (para 3), concedes its cost (para 4) and leaves open whether what survives is a promise (para 5). Only (c) holds both the reply and the remainder.",
+     "src": "Countdown 10 Q75 and Q55 (main idea: a secondary point given the weight of the thesis); AILET 2 Q26 (one strand picked as the whole)"
+    },
+    {
+     "n": 2,
+     "type": "Weaken (narrow sub-claim)",
+     "stem": "Which of the following, if true, would most seriously weaken the author's claim in the third paragraph that a person 'can usually tell which question she is asking'?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "People who abandon promises to themselves generally cannot tell, even on reflection, whether they judged a promise's purpose spent or merely wished to stop.",
+      "No one other than the person herself is ever in a position to check whether a release she grants herself was granted as promisee rather than merely as promisor.",
+      "People break a larger share of the promises they make to themselves than of those they make to friends, though they say they feel worse about breaking the latter.",
+      "People who keep their promises to themselves usually do so out of habit, without first stopping to ask whether the promise's purpose still holds."
+     ],
+     "codes": [
+      "K",
+      "R",
+      "A",
+      "T"
+     ],
+     "reasons": [
+      "The claim is that a person can tell whether she is asking 'does the purpose still hold?' or 'do I still feel like it?'. If people generally cannot tell these apart even on reflection, the claim fails.",
+      "This repeats the objection's premise ('no one else can inspect the costume'), which the author already grants. It is about outside checking; the claim under attack is about what the person herself can tell.",
+      "This adds a comparison between self-promises and promises to others that the passage never makes, and break rates say nothing about whether a person can tell which question she is asking.",
+      "This is about why people keep self-promises. The claim under attack is about someone deliberating over a release: whether she can tell which of two questions she is asking."
+     ],
+     "key": "a",
+     "why": "The question targets one narrow sub-claim at the end of paragraph 3, not the whole reply. Only (a) denies the self-knowledge the sub-claim asserts, and does so generally rather than occasionally.",
+     "src": "Sectional 1 (weakening a narrow sub-claim: skipped) and the author's-response-to-an-objection miss (an option adding a comparison the author never makes)"
+    },
+    {
+     "n": 3,
+     "type": "Assumption (challenged)",
+     "stem": "The author's argument in the second paragraph challenges which of the following assumptions on which the sceptic's argument relies?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "That a promise gives rise to a genuine claim only where some second party stands ready to complain whenever the promise is broken.",
+      "That a release extracted from a promisee who has been worn down, or who was deceived about what the promise protected, is defective.",
+      "That a promise to oneself differs from a resolution only in the dignified vocabulary in which the speaker chooses to express her intention.",
+      "That a person who holds a promise releases it validly whenever she declares it released, in whatever capacity she happens to declare it."
+     ],
+     "codes": [
+      "T",
+      "L",
+      "R",
+      "K"
+     ],
+     "reasons": [
+      "This is the worry of paragraph 5, and the author half-grants it there ('no second party whose complaint survives her indifference'). Paragraph 2 does not challenge it.",
+      "This is the author's own premise in paragraph 2, not an assumption of the sceptic's, and the author relies on it rather than challenging it.",
+      "This echoes the sceptic's conclusion ('a resolution in borrowed clothes… dignified by a vocabulary'). It is what the argument concludes, not an assumption it relies on.",
+      "The sceptic moves from 'she holds the promise' to 'she can cancel it at pleasure'. That needs every declaration of release by the holder to count, in whatever role it is made. Paragraph 2 denies exactly this: 'It is settled by asking in which role she decided… Only the second releases.'"
+     ],
+     "key": "d",
+     "why": "An assumption the author challenges must be something the sceptic's reasoning needs and paragraph 2 denies. The sceptic needs the holder's release to be valid at pleasure; paragraph 2 makes validity depend on the role in which she decides.",
+     "src": "AILET 5 Q34 (an observation or conclusion picked over the assumption) and Sectional 2 Q22"
+    },
+    {
+     "n": 4,
+     "type": "Word in context",
+     "stem": "As used in the first paragraph, the word 'creditor' (in 'a vocabulary that implies a creditor where there is none') most nearly means:",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "a lender of money, because the sceptic's argument turns on who holds the power to cancel what is owed.",
+      "a party owed the performance, because promising implies someone to whom keeping the promise is due.",
+      "one who gives credence, because a promise to oneself is, for the sceptic, only 'a statement of present intention'.",
+      "a guarantor of the promise, because Hobbes's sovereign can both bind and release himself whenever he likes."
+     ],
+     "codes": [
+      "F",
+      "K",
+      "F",
+      "F"
+     ],
+     "reasons": [
+      "This is the dictionary sense. The reason echoes the passage, but nothing in it involves money: the missing 'creditor' is whoever is owed the promised performance.",
+      "The sceptic's point is that self-promising talk implies a second party with a claim, and there is none. Paragraph 5 uses the same idea: 'a claimant whose grievance does not depend on my feelings about it'.",
+      "This takes 'credit' in the sense of belief. The sceptic's complaint is that no one is owed anything, not that no one believes the statement.",
+      "The reason restates Hobbes accurately, but a guarantor answers for someone else's obligation. The party the sceptic finds missing is the one to whom the performance is owed."
+     ],
+     "key": "b",
+     "why": "A 'creditor' is the one to whom something is owed. Here the 'something' is the promised performance, and the sceptic's charge is that self-promising implies such a party where none exists.",
+     "src": "Countdown 6 Q14 'immersion' and AILET 5 Q16 'venerable' (dictionary sense over the contextual one)"
+    },
+    {
+     "n": 5,
+     "type": "Application / analogy",
+     "stem": "Which of the following is most closely analogous to the distinction the author draws in the second paragraph?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "A committee may overrule its chair only by a majority vote of its members, so that the chair's own wishes cannot settle a disputed question.",
+      "A shopkeeper who borrows from her own till must record the loan in a ledger, so that an auditor can later confirm that it was repaid.",
+      "A runner who has promised his coach to train every day can be released by the coach, but not by deciding for himself that he has trained enough.",
+      "A referee who is also playing in a friendly match may award a penalty only by judging as a referee would, not because it would help his own side."
+     ],
+     "codes": [
+      "M",
+      "M",
+      "P",
+      "K"
+     ],
+     "reasons": [
+      "Here authority is split between different people. The author's point is about two roles inside one person.",
+      "This makes the safeguard an outside check. The author says the distinction's 'proper home is not the tribunal but deliberation'.",
+      "This involves two people and a release by the promisee, so it matches only the passing point about releases between persons. It has no one person deciding in two different roles.",
+      "One person holds two roles; a decision counts only if it is made in the role that has the authority, not in the role whose interest it suits. That is the structure of 'It is settled by asking in which role she decided.'"
+     ],
+     "key": "d",
+     "why": "The distinction is between two standpoints held by one person, with validity depending on which standpoint a decision comes from. Only the referee is one person in two roles whose decision counts only from the authorised one.",
+     "src": "Countdown 10 Q64 and Sectional 1 Q23 (a case that looks similar but works by a different mechanism)"
+    },
+    {
+     "n": 6,
+     "type": "Would NOT support",
+     "stem": "Which of the following situations, if true, would NOT support the reasoning in the fourth paragraph that self-promises bind most reliably those who least need binding, because only they can hold to the promisee's standpoint against inclination?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "Disciplined people keep more of their promises to themselves than procrastinators do, but only because the promises they make are smaller and easier to keep.",
+      "Those who seldom put off unpleasant tasks keep a far larger share of their promises to themselves than habitual procrastinators manage to keep.",
+      "A procrastinator's promises to himself grow more reliable only after he has learned, by quite other means, to resist the pull of the moment.",
+      "Those who most often break their promises to themselves are also those least able to set a promise's purpose above how they happen to feel at the time."
+     ],
+     "codes": [
+      "K",
+      "E",
+      "E",
+      "E"
+     ],
+     "reasons": [
+      "The outcome matches (disciplined people keep more self-promises), but the cause is different: easier promises, not a stronger hold on the promisee's standpoint. A case explained by a different mechanism does not support the author's reasoning.",
+      "This supports the claim: self-promises bind best those who need binding least.",
+      "This supports the last line of paragraph 4: success 'presupposes a strength already there'.",
+      "This supports the mechanism: failure goes with a faint promisee's voice."
+     ],
+     "key": "a",
+     "why": "The question asks about the reasoning (the 'because'), not only the outcome. (a) reaches the same outcome by another route, so it gives no support to the author's explanation.",
+     "src": "Countdown 10 Q64 (mechanism) and Sectional 2 Q18 (a situation that supports picked as the one that doesn't)"
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "label": "Passage 2",
+   "kind": "Science · microbiology",
+   "text": [
+    "In 1944 Joseph Bigger, an Irish bacteriologist, recorded an awkward fact about penicillin. The drug killed cultures of staphylococci rapidly but never completely: a tiny residue, rarely more than one cell in a million, survived exposures that should have sterilised the flask. The residue was not resistant. When Bigger grew the survivors up and exposed their descendants to the drug, the new culture died as the original had, down to a similarly small remainder, so whatever had protected the survivors had not been inherited. He called them persisters, a name that has outlived several attempts to explain them. Their signature is a biphasic killing curve: a steep initial decline as the bulk of the population dies, then a plateau in which a minority outlasts exposures many times longer. Resistance shifts the whole curve; persistence bends its tail.",
+    "For decades the favoured explanation was dormancy. Most bactericidal antibiotics kill by corrupting a process the cell is actively running, such as building its wall, making proteins or copying its DNA, so a cell that has stopped running them offers the drug nothing to corrupt. The puzzle was why a few cells in a genetically uniform culture should stop. One answer invoked toxin–antitoxin modules, paired genes that encode a stable toxin able to arrest growth and an unstable antitoxin that neutralises it. Because the antitoxin is continually degraded and must be continually replaced, a chance dip in its supply could free the toxin and shut a cell down, making dormancy the output of a regulated, if randomly triggered, programme. A much-cited series of experiments appeared to show that deleting such modules sharply reduced persistence. Two of its central papers were later retracted, after the laboratory itself discovered that its engineered strains had picked up a bacteriophage, a virus that infects bacteria, whose presence could account for the difference.",
+    "The retractions did not refute dormancy, but they removed the strongest evidence for a dedicated switch, and a rival account has since gained ground. On this view there is no programme at all: persisters are cells that, through ordinary fluctuations in metabolism, happen to be low on ATP, the molecule that powers most of the processes antibiotics attack. Persistence becomes a by-product of noise rather than a product of design. The two accounts are harder to separate than they sound, since both predict that survivors will be metabolically quiet; they differ over whether the quiet is regulated. And the obvious experiment, measuring energy levels in a culture exposed to a drug, is close to useless when persisters may number one cell in ten thousand or fewer: a shift in the culture's average could reflect a small change in every cell or a large change in a handful, and only the second bears on persistence.",
+    "The way forward has been to follow single cells. In 2004 Nathalie Balaban and her colleagues watched individual Escherichia coli in microfluidic channels before, during and after exposure to ampicillin, a relative of penicillin, and found that the survivors had been growing slowly or not at all before the drug arrived. It was a striking confirmation of pre-existing dormancy, though obtained in mutant strains that form persisters at many times the ordinary rate. Nine years later, a study of mycobacteria treated with isoniazid found something different. The survivors had been growing and dividing much like their neighbours; what distinguished them was the fluctuating level of an enzyme the drug needs to become active, so that a cell caught with little of the enzyme converted less of the drug into its lethal form.",
+    "These results are usually enlisted on one side or the other, but together they suggest something less tidy: that 'persistence' may name an outcome rather than a mechanism, so that cells survive a drug that attacks growth by not growing, and survive a drug that must be activated by failing to activate it. If so, the search for the switch was framed too narrowly. Yet that conclusion must be held loosely, for nearly all these observations were made in cultures growing fast in rich medium, where quiet cells are rare enough to stand out. In an abscess or a biofilm, where most cells grow slowly, the line between the persister and its neighbours may be far fainter, and a treatment designed to wake the persisters may find that it must wake almost everyone."
+   ],
+   "qs": [
+    {
+     "n": 7,
+     "type": "Primary purpose",
+     "stem": "What is the primary purpose of the passage?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "To show that the retraction of the toxin–antitoxin studies has seriously weakened the case for dormancy as the main explanation of persistence.",
+      "To weigh the dormancy and energy accounts against each other and to conclude, with some reservations, that the energy account better explains the evidence.",
+      "To trace how explanations of why some bacteria survive antibiotics have shifted, and to suggest, with a caveat, that such survival may arise by more than one route.",
+      "To argue that laboratory studies of bacteria grown in rich medium can rarely reveal how infections actually behave inside the bodies of patients."
+     ],
+     "codes": [
+      "L",
+      "W",
+      "K",
+      "B"
+     ],
+     "reasons": [
+      "Paragraph 3: 'The retractions did not refute dormancy'; they removed evidence for 'a dedicated switch', and paragraph 4 then reports 'a striking confirmation of pre-existing dormancy'. It is also one episode, not the passage's purpose.",
+      "The author never ranks the two accounts. The single-cell findings point in different directions, and paragraph 5 resists enlisting them 'on one side or the other'.",
+      "The passage runs from Bigger's observation, through the dormancy and toxin–antitoxin account and the energy account, to single-cell studies; paragraph 5 says 'persistence' may name 'an outcome rather than a mechanism', then adds 'that conclusion must be held loosely'.",
+      "The caveat about rich medium is one qualification in paragraph 5, made about these observations, not a general thesis about laboratory studies."
+     ],
+     "key": "c",
+     "why": "The passage is a history of explanations that ends in a qualified suggestion (several routes to one outcome) and a caveat about laboratory conditions.",
+     "src": "Countdown 10 Q75 (a ranking the passage never makes) and AILET 2 Q38 (an unearned absolute)"
+    },
+    {
+     "n": 8,
+     "type": "Strengthen",
+     "stem": "Which of the following, if true, would most strengthen the account described in the third paragraph against the toxin–antitoxin account?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "In many bacterial species, the cells that survive an antibiotic turn out to have been metabolically quiet, rather than active, when the drug first arrived.",
+      "Cells engineered so that none of their antitoxins can be degraded still form persisters at the usual rate, with survival going to those lowest in ATP.",
+      "A culture's average ATP level falls measurably in the minutes before its killing curve flattens out into the plateau that is the mark of persistence.",
+      "Deleting the toxin–antitoxin modules from a strain that has been checked and found free of phage sharply reduces the rate at which it forms persisters."
+     ],
+     "codes": [
+      "N",
+      "K",
+      "N",
+      "L"
+     ],
+     "reasons": [
+      "Paragraph 3: 'both predict that survivors will be metabolically quiet'. Evidence both accounts predict cannot favour one.",
+      "On the toxin–antitoxin account a cell shuts down when 'a chance dip in its supply could free the toxin'. If no antitoxin can be degraded, that route is closed, yet persistence is unchanged and tracks low ATP. That favours the energy account over the programme.",
+      "A change in the average is what paragraph 3 calls 'close to useless': it 'could reflect a small change in every cell or a large change in a handful'.",
+      "This is the clean version of the retracted result, so it supports the toxin–antitoxin account, the opposite of what is asked."
+     ],
+     "key": "b",
+     "why": "To favour one account over the other, evidence must be something one predicts and the other does not. Quietness and average ATP fit both; only (b) closes the toxin–antitoxin route and leaves the energy account standing.",
+     "src": "Countdown 5 Q69 (generic support picked over the evidence that discriminates) and Sectional 1 Q11"
+    },
+    {
+     "n": 9,
+     "type": "Assumption",
+     "stem": "Bigger's conclusion that the surviving cells were not resistant, as the first paragraph reports it, depends on which of the following assumptions?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "A protective trait that was genetic would have passed to the survivors' descendants, so that the regrown culture would have resisted the drug better.",
+      "The surviving cells had already been dormant when the penicillin arrived, and so offered the drug no active process that it could corrupt.",
+      "Penicillin kills a bacterium only while the cell is building its wall, so that the cells which are dividing are the most exposed to it.",
+      "The original culture contained no cell at all that was already resistant to penicillin before the drug was first added to it in the flask."
+     ],
+     "codes": [
+      "K",
+      "A",
+      "N",
+      "X"
+     ],
+     "reasons": [
+      "Bigger's test was to regrow the survivors and expose their descendants. The descendants 'died as the original had', so the protection 'had not been inherited'. That shows the cells were not resistant only if resistance would have been passed on. If it would not, the test proves nothing.",
+      "This is a later explanation of why persisters survive (paragraph 2). Bigger's conclusion that they were not resistant does not depend on it.",
+      "This may be true, but the regrowth test does not rely on how penicillin kills.",
+      "This is not needed. Had resistant cells been present, the regrowth test would have exposed them. The conclusion is about the survivors he regrew, and they were not resistant."
+     ],
+     "key": "a",
+     "why": "Negate (a): if a genetic protection need not show up in the descendants, then descendants dying 'as the original had' no longer rules out resistance. So the conclusion depends on (a).",
+     "src": "AILET 5 Q34 (a related fact picked over the needed premise) and Sectional 2 Q22"
+    },
+    {
+     "n": 10,
+     "type": "Detail: why",
+     "stem": "According to the passage, why did the retractions described in the second paragraph not refute the dormancy explanation of persistence?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "The bacteriophage that contaminated the engineered strains was itself later found to make cells dormant, so dormancy still explained the survival observed.",
+      "The single-cell study had already confirmed pre-existing dormancy in strains that form persisters at the ordinary rate, so dormancy stood regardless of them.",
+      "The retracted work concerned what might switch cells off, not whether survivors are quiet, and losing evidence for a switch is no case against dormancy.",
+      "The retracted papers concerned how persisters are counted rather than why they survive, so they had no bearing on any account of survival."
+     ],
+     "codes": [
+      "A",
+      "L",
+      "K",
+      "L"
+     ],
+     "reasons": [
+      "The passage says only that the phage's presence 'could account for the difference'. It never says the phage made cells dormant.",
+      "The 2004 study used 'mutant strains that form persisters at many times the ordinary rate', not strains at the ordinary rate.",
+      "Paragraph 3: the retractions 'removed the strongest evidence for a dedicated switch'. The toxin–antitoxin modules were offered as the cause of dormancy (para 2). Removing support for one cause leaves dormancy itself untouched, and the rival account still has survivors 'metabolically quiet'.",
+      "The retracted work was about whether deleting the modules 'reduced persistence', which is evidence about why cells survive. That is why its loss 'removed the strongest evidence for a dedicated switch'."
+     ],
+     "key": "c",
+     "why": "The passage never states the reason in one sentence. It has to be put together: the modules were one proposed cause of dormancy (para 2), and the retractions removed evidence for that cause, not for dormancy (para 3).",
+     "src": "Countdown 9 Q56 (a fact attached to the wrong conclusion) and Countdown 9 Q65 (a general paraphrase over the stated reason)"
+    },
+    {
+     "n": 11,
+     "type": "Information EXCEPT",
+     "stem": "The passage provides information to answer each of the following questions EXCEPT:",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "How did Bigger establish that the cells surviving penicillin were not resistant to the drug?",
+      "Why does a cell that has stopped growing escape being killed by most bactericidal antibiotics?",
+      "What distinguished the mycobacteria that survived isoniazid from their neighbours that were killed?",
+      "How did the phage's presence in the engineered strains account for the difference in persistence?"
+     ],
+     "codes": [
+      "E",
+      "E",
+      "E",
+      "K"
+     ],
+     "reasons": [
+      "Answered in paragraph 1: he regrew the survivors and found their descendants 'died as the original had'.",
+      "Answered in paragraph 2: such drugs corrupt 'a process the cell is actively running', so a stopped cell 'offers the drug nothing to corrupt'.",
+      "Answered in paragraph 4: 'the fluctuating level of an enzyme the drug needs to become active'.",
+      "The phage is mentioned, and paragraph 2 says its presence 'could account for the difference', but the passage never says how. Mentioned is not answered."
+     ],
+     "key": "d",
+     "why": "Three questions are answered in the text. The phage question is only raised: the passage says the phage could explain the result, not how.",
+     "src": "Sectional 1 Q12 (information-EXCEPT: you treated 'mentioned' as 'answered') and Countdown 9 Q75"
+    },
+    {
+     "n": 12,
+     "type": "Quoted-line inference",
+     "stem": "Read the following line from the passage:",
+     "quote": "\"Resistance shifts the whole curve; persistence bends its tail.\"",
+     "after": "Which of the following can be most reasonably inferred from the quoted line?",
+     "opts": [
+      "Since persistence affects only the tail, a culture rich in persisters loses the bulk of its cells more slowly at first than an ordinary culture does.",
+      "If a culture's early decline is unchanged but a small remnant then outlasts far longer exposures, the pattern points to persistence, not resistance.",
+      "Persisters can be recognised only after most of a culture has died, since they show up solely in the far tail of its killing curve.",
+      "Cultures whose killing curves show the steepest initial decline are the ones most likely to contain a surviving minority of persister cells."
+     ],
+     "codes": [
+      "L",
+      "K",
+      "X",
+      "A"
+     ],
+     "reasons": [
+      "If persistence 'bends its tail', the early decline is untouched. A slower decline from the start would be a shift of the whole curve, which is the mark of resistance.",
+      "Persistence leaves the 'steep initial decline' alone and changes only the 'plateau in which a minority outlasts exposures many times longer'. A curve whose early part is unchanged and whose tail lengthens is therefore persistence, not resistance.",
+      "The line is about the shape of the curve, not the only way to detect persisters. Paragraph 4 describes survivors being watched before 'the drug arrived'.",
+      "This adds a link between the steepness of the decline and the number of persisters, which the passage never draws."
+     ],
+     "key": "b",
+     "why": "Resistance moves the whole curve (the drug kills everyone less well); persistence changes only the tail (a minority lasts longer). So a curve with an unchanged steep start and a longer tail indicates persistence.",
+     "src": "AILET 2 Q38 (an absolute in an inference option) and Sectional 2 Q16"
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "label": "Passage 3",
+   "kind": "Modern Indian history · the colonial economy",
+   "text": [
+    "Few indictments of British rule were pressed more persistently by early Indian nationalists than the charge against the railways. The lines, critics such as Romesh Chunder Dutt argued, had been laid to carry raw cotton to the ports and Lancashire cloth back from them; they had been built by British companies whose investors were promised a return of five per cent on their capital, paid out of Indian revenues whether or not the lines earned it; and they had absorbed sums that, spent on irrigation, would have done far more to protect the cultivator against drought. The railways, on this view, were less an investment in India than a charge levied on it.",
+    "A century later the question was reopened with tools the nationalists did not possess. Using district-level data on prices, rainfall and output from the late nineteenth and early twentieth centuries, the economist Dave Donaldson estimated that the arrival of the railway lowered the cost of moving goods, narrowed the gaps between prices in different districts and raised real agricultural income in the districts it reached by roughly sixteen per cent. The obvious objection, that the lines had simply been laid where growth was coming anyway, he met ingeniously: more than forty thousand kilometres of line had been approved but, for one reason or another, never built, and the districts along those phantom routes showed no comparable gains. Related work found that, once a district was connected, a failure of its rains became much less likely to turn into famine.",
+    "It is tempting to read these findings as a verdict against the nationalists, and they are often cited as one. But the two bodies of work answer different questions, because they measure the railways against different alternatives. Donaldson's comparison is with an India that had no railways; the nationalists' was with an India whose revenues had been spent otherwise, or whose railways had been built on other terms. A gain of sixteen per cent over no railway at all says nothing about whether canals, or lines laid to serve inland markets rather than the ports, would have yielded more. Nor does an average gain settle who received it: a district's real income can rise while the merchant who moves its grain gains much and the labourer who eats it gains little. The verdict and the indictment pass each other like trains on parallel tracks, each keeping to its own timetable and neither arriving at the other's station.",
+    "The famine result is more uncomfortable for the older critique, since some critics had argued that the railways left the countryside more exposed to famine, not less. Here too the agreement is narrower than it looks. Integration protected a district against a local failure of the rains because grain could now flow in; it also meant that grain could flow out when prices elsewhere were higher, and critics at the time of the great famine of 1876 to 1878 alleged that it had done exactly that. Both effects are compatible with the econometric finding, which measures how far the link between rainfall and famine weakened on average, not whether particular districts in particular years were stripped of food by the very lines that were meant to feed them.",
+    "None of this rescues the nationalist case in its original form, which held that the railways impoverished India outright; on that point the evidence has moved decisively against it. What survives is a different charge, and a harder one to test: that the terms on which the lines were financed turned a public gain into a private claim on public money. Under the guarantee, Indian taxpayers bore the risk of lines whose returns flowed largely to investors in Britain. Whether that arrangement cost India more than the railways gave back depends on what the same capital would have cost on any other terms, and on that question the econometrics, for all their ingenuity, are silent."
+   ],
+   "qs": [
+    {
+     "n": 13,
+     "type": "Main idea",
+     "stem": "Which of the following best captures the central idea of the passage?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "Connecting a district to the railway made a failure of its rains much less likely to become famine, since grain could then be brought in from elsewhere.",
+      "Recent econometric work has refuted the nationalist critique of the railways, though the guarantee that financed them was admittedly a poor bargain for India.",
+      "Quantitative history can settle a controversy only when its practitioners and their critics first agree on what the past is to be compared with.",
+      "The econometrics show the railways raised incomes, but by comparing them with no railway they leave open questions of alternatives, shares and terms."
+     ],
+     "codes": [
+      "P",
+      "R",
+      "B",
+      "K"
+     ],
+     "reasons": [
+      "This is one finding from paragraphs 2 and 4, and it drops the half of paragraph 4 that matters to the author: grain 'could flow out' too.",
+      "Treating the findings as 'a verdict against the nationalists' is the reading the author calls 'tempting' and then resists. And the author says whether the guarantee cost India more is a question on which the evidence is 'silent', not a settled bad bargain.",
+      "The point about counterfactuals is made about this one debate. Turned into a rule for all quantitative history, it goes beyond the passage, and it leaves out the railways altogether.",
+      "Paragraph 2 reports the gains; paragraph 3 says the two literatures 'measure the railways against different alternatives' and that an average does not 'settle who received it'; paragraph 4 narrows the famine result; paragraph 5 leaves the financing terms as the charge on which the econometrics 'are silent'."
+     ],
+     "key": "d",
+     "why": "The passage accepts the econometric finding of real gains and the rejection of 'outright' impoverishment, then shows that the comparison behind it leaves three of the critics' questions untouched. (d) has both halves.",
+     "src": "Countdown 10 Q75 and Q55 (main idea: a part, or the view the author resists, picked as the whole)"
+    },
+    {
+     "n": 14,
+     "type": "Weaken",
+     "stem": "Which of the following, if true, would most weaken the conclusion Donaldson drew from the lines that were approved but never built?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "Most approved lines that were never built had been dropped because surveys judged the districts they would serve poor and unpromising.",
+      "Before any lines were planned, districts along the phantom routes had grown at much the same rate as the districts that the railway later reached.",
+      "Nationalist critics complained that the lines were laid to carry raw cotton to the ports rather than to serve the districts they crossed.",
+      "In connected districts, the incomes of grain merchants rose far faster than the real wages of the labourers who worked the land."
+     ],
+     "codes": [
+      "K",
+      "L",
+      "R",
+      "T"
+     ],
+     "reasons": [
+      "The phantom routes are a control: if planners picked growing places, those districts should have grown too. If the unbuilt lines were dropped precisely because their districts looked poor, they were not like the built ones, and their lack of growth no longer shows that the railway caused the gains elsewhere.",
+      "This makes the two groups more comparable, so it strengthens the control rather than weakening it.",
+      "This repeats paragraph 1. It concerns the purpose of the lines, not whether the unbuilt lines are a fair control.",
+      "This bears on who gained (paragraph 3), not on whether the railway caused the average gain. The author notes that an average can rise while the labourer 'gains little'."
+     ],
+     "key": "a",
+     "why": "The inference works only if the unbuilt lines are a fair comparison. (a) shows they were selected for being unpromising, so the comparison fails.",
+     "src": "Sectional 1 (challenging a paragraph's conclusion: an echo that hits a different target) and Countdown 5 Q76"
+    },
+    {
+     "n": 15,
+     "type": "Conclusion (paragraph)",
+     "stem": "Which of the following can be most reasonably concluded from the fourth paragraph?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "On balance the railways made famine more likely in the districts they connected, since grain could flow out of them whenever prices elsewhere rose.",
+      "Officials in the famine of 1876 to 1878 deliberately used the railways to move grain away from the very districts that most needed it.",
+      "An average weakening of the rainfall–famine link is compatible with some connected districts having fared worse in particular famines.",
+      "The critics were right that the railways left the countryside more exposed to famine, although they somewhat overstated how large the effect was."
+     ],
+     "codes": [
+      "L",
+      "A",
+      "K",
+      "R"
+     ],
+     "reasons": [
+      "This reverses the finding the paragraph accepts: integration 'protected a district against a local failure of the rains'. Outflow is a qualification, not the net effect.",
+      "The paragraph reports what 'critics at the time… alleged', that grain flowed out with prices, and says nothing about officials acting deliberately.",
+      "The paragraph says the finding 'measures how far the link between rainfall and famine weakened on average, not whether particular districts in particular years were stripped of food'. Both can be true at once.",
+      "The author calls the famine result 'uncomfortable for the older critique', so the critics were not right in the main, and nothing measures how much they overstated it."
+     ],
+     "key": "c",
+     "why": "The paragraph's conclusion is about what an average can and cannot show: it is compatible with local harm in particular years.",
+     "src": "Countdown 9 Q76 (a view the author reports taken as the author's own) and AILET 2 Q38"
+    },
+    {
+     "n": 16,
+     "type": "Figure of speech",
+     "stem": "Which of the following figures of speech is most prominently employed in the line below?",
+     "quote": "\"The verdict and the indictment pass each other like trains on parallel tracks, each keeping to its own timetable and neither arriving at the other's station.\"",
+     "after": null,
+     "opts": [
+      "Metaphor, because the two bodies of work are identified outright with trains, with no word of comparison, to show that they never meet.",
+      "Personification, because the verdict and the indictment are given the human power to keep appointments and to choose a destination.",
+      "Simile, because the two bodies of work are likened, through 'like', to trains that run side by side without ever meeting.",
+      "Analogy, because the author reasons step by step from the scheduling of railways to the methods that economic historians use."
+     ],
+     "codes": [
+      "F",
+      "F",
+      "K",
+      "F"
+     ],
+     "reasons": [
+      "The line does use a word of comparison: 'like trains'. A metaphor would say the verdict and the indictment are trains.",
+      "Keeping a timetable and arriving at a station are what trains do. The arguments are given a train's properties, not a person's.",
+      "The comparison is made explicit with 'like', and the rest of the sentence draws out the image. An explicit comparison with 'like' or 'as' is a simile, however far it is extended.",
+      "No reasoning is drawn from how railways are scheduled. The line is one image, not an argument from a parallel case."
+     ],
+     "key": "c",
+     "why": "'Like trains on parallel tracks' is an explicit comparison, so the figure is a simile, extended through 'timetable' and 'station'. In Sectional 3 the key was a metaphor; here 'like' does the work, and the trap is to call an extended simile a metaphor or an analogy.",
+     "src": "Countdown 6 Q7 (simile, metaphor and analogy confused) and Sectional 3 (metaphor against analogy)"
+    },
+    {
+     "n": 17,
+     "type": "Function of a detail",
+     "stem": "The author sets out the nationalists' charges in the first paragraph in some detail primarily in order to",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "show that the nationalist case rested on claims that later research has since discredited on every point that the critics raised.",
+      "prepare for the later argument that the econometrics refute the claim of outright loss but leave the other charges open.",
+      "present the nationalist view that the author then goes on to defend, against the econometric findings, in the rest of the passage.",
+      "establish that the guarantee system, rather than the railways themselves, was the chief cause of the poverty of colonial India."
+     ],
+     "codes": [
+      "X",
+      "K",
+      "R",
+      "A"
+     ],
+     "reasons": [
+      "Only the claim of outright impoverishment is discredited. The questions about alternatives, shares and terms are left open.",
+      "The detail pays off on a second reading: the ports and irrigation return in paragraph 3 ('canals, or lines laid to serve inland markets rather than the ports'), the guarantee in paragraph 5, while 'impoverished India outright' is the one point on which 'the evidence has moved decisively against it'.",
+      "The author does not defend the original case: 'None of this rescues the nationalist case in its original form'.",
+      "The author never ranks the causes of poverty, and says whether the guarantee cost India more than the railways gave back cannot be settled from this evidence."
+     ],
+     "key": "b",
+     "why": "Each charge in paragraph 1 is picked up later and sorted into the one the evidence refutes and the ones it leaves open.",
+     "src": "AILET 5 Q6 (effect of a detail) and Countdown 6 Q13 (a local point taken for the main one)"
+    },
+    {
+     "n": 18,
+     "type": "Word in context",
+     "stem": "As used at the end of the first paragraph, the word 'charge' (in 'less an investment in India than a charge levied on it') most nearly means:",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "a cost imposed, because the critics held that India paid for lines whose benefits went largely to others.",
+      "an accusation, because the nationalists pressed their indictment of the railways more persistently than any other.",
+      "a duty entrusted, because Indians were made responsible for running the lines that the British companies had built.",
+      "a forward rush, because the companies laid the lines in a hurry so as to reach the ports ahead of their rivals."
+     ],
+     "codes": [
+      "K",
+      "R",
+      "F",
+      "F"
+     ],
+     "reasons": [
+      "'Levied' and the contrast with 'investment' fix the sense: a financial burden placed on India, not an outlay that would repay it.",
+      "That is the sense of 'charge' in the paragraph's first sentence ('the charge against the railways'). At the end of the paragraph the word is 'levied', which an accusation is not.",
+      "This is the sense of 'in charge of'. Nothing says Indians ran the lines.",
+      "This is the sense of a cavalry charge. The passage says nothing about haste or rivalry."
+     ],
+     "key": "a",
+     "why": "The same paragraph uses 'charge' twice in two senses. At the end, 'levied on it' and the contrast with 'investment' force the financial sense.",
+     "src": "Countdown 6 Q14 'immersion' and AILET 5 Q16 'venerable' (the wrong sense of a word the passage uses more than one way)"
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "label": "Passage 4",
+   "kind": "Literary criticism · textual editing",
+   "text": [
+    "Between 1907 and 1909 Henry James reissued much of his fiction in a collected edition, and for several of the early novels he did not merely correct but rewrote, sentence by sentence, in the knotted idiom of his late style. Readers have been choosing between the two Jameses ever since, though most do not know that they are choosing: a paperback of The Portrait of a Lady may reproduce the text of 1881 or that of 1908, and the difference is not one of commas. Someone must decide which text a reader meets first, and that someone is usually an editor working under a doctrine most readers have never heard of.",
+    "For much of the twentieth century the doctrine was the pursuit of the author's final intention. Its most influential source, W. W. Greg's essay 'The Rationale of Copy-Text' of 1950, was in fact more modest than the uses later made of it. Greg distinguished a text's 'substantive' readings, its words, from its 'accidentals', its spelling and punctuation, and advised editors to take the accidentals from the earliest authoritative version, since printers' house styles altered them with each resetting, while admitting the author's later revisions of substance. In the hands of Greg's successors the method hardened into a principle: an edition should present the text its author finally intended, cleared of everything others had done to it. Applied to James, the principle seems to give a clear verdict. The collected edition is what he finally intended, and the editor's task is to print it.",
+    "The difficulty is that 'final' here does two jobs. It can mean last in time, or it can mean consummating: the intention toward which earlier versions were striving and in which they come to rest. The doctrine needs the second sense but can verify only the first. The late James revising the early novels was not, on most critics' accounts, completing what the young James had begun; he was reading the young James and rewriting him, as a gifted but partial reader would. To call the result the work's fulfilment is to assume that a writer's last word on a book must be his best word on it, a claim about literary value smuggled into a rule about documents.",
+    "A rival school, associated above all with Jerome McGann's critique of 1983, argued that the editorial fixation on authorial intention misdescribes how texts come into being. Texts, on this view, are social products, made by publishers, editors, compositors and censors as well as by authors, and an edition should record the versions that actually circulated rather than reconstruct one that existed only in the author's mind. The argument corrects a real naivety, but it pays for the correction by dissolving a distinction readers have every reason to keep. If every change is simply an event in the text's social history, then James's rewriting of a sentence and a compositor's misreading of his hand have the same standing, and whether James wrote a given word, often the question a reader most wants answered, ceases to be the editor's concern.",
+    "Digital editions now promise to end the quarrel: show the reader every version, with the variants aligned, and let her choose. The promise is genuine, and so is what it hides. A reader offered every text with no guidance on which to read first has not been freed from the editor's judgment so much as handed it, usually without the knowledge needed to exercise it. And some works resist the choice for a reason the debate seldom names. The revisions of a book its author could not leave alone may record less an intention, final or otherwise, than the fact that for its author the book was never finished, in which case no single text, and no display of all of them, can simply be the work."
+   ],
+   "qs": [
+    {
+     "n": 19,
+     "type": "Central concern",
+     "stem": "Which of the following best captures the central concern of the passage?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "James rewrote rather than completed his early novels for the collected edition, so editors ought to print the texts in which they first appeared.",
+      "Each main way of choosing a revised work's text carries a cost its advocates overlook, and some works may not admit of one authoritative text at all.",
+      "The social theory of texts corrects the naivety of the final-intention doctrine and should replace it, though digital editions may yet make the choice unnecessary.",
+      "Attempts to fix the text of a literary work tend to rest on hidden judgments of literary value that editors are usually unwilling to admit openly."
+     ],
+     "codes": [
+      "P",
+      "K",
+      "W",
+      "B"
+     ],
+     "reasons": [
+      "James is the opening case, not the subject. And the author never recommends printing the first texts; paragraph 3 attacks a principle, not the later James.",
+      "Paragraphs 2 and 3 find a value claim 'smuggled' into final intention; paragraph 4 finds the social theory 'pays for the correction'; paragraph 5 finds that the digital promise 'hides' the handing of judgment to the reader, then suggests some works were 'never finished'.",
+      "This ranks the social theory above final intention; the author says it 'pays for the correction by dissolving a distinction readers have every reason to keep'. And paragraph 5 denies that digital editions remove the need to choose.",
+      "The 'smuggled' value claim is a charge against one doctrine (para 3). The social theory and digital editions are criticised on other grounds, so even hedged this generalises one paragraph to all editing."
+     ],
+     "key": "b",
+     "why": "The passage examines three answers to 'which text?' and finds each wanting for a different reason, then suggests the question may sometimes have no answer.",
+     "src": "Countdown 10 Q55 and Q75 (main idea: part of the passage, or a ranking it never makes)"
+    },
+    {
+     "n": 20,
+     "type": "Strengthen",
+     "stem": "Which of the following, if true, would most strengthen the author's objection to the social theory of texts in the fourth paragraph?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "Printers in James's day routinely imposed their own house style on the spelling and punctuation of the novels they set, whatever the author preferred.",
+      "McGann's critique was widely adopted by editors of nineteenth-century fiction in the decades that followed, as older methods fell away.",
+      "Most readers who meet The Portrait of a Lady today first read it in the revised text of 1908, not in the text as first published in 1881.",
+      "Critics' readings of particular passages in James have repeatedly changed once a puzzling word was traced to a compositor rather than to James."
+     ],
+     "codes": [
+      "T",
+      "N",
+      "N",
+      "K"
+     ],
+     "reasons": [
+      "This supports Greg's reason for taking accidentals from the earliest version (para 2), or the social theory's picture of many hands. It does nothing for the objection.",
+      "How widely the critique was adopted says nothing about whether its cost is real.",
+      "Which text readers happen to meet says nothing about whether the difference between the author's word and a compositor's matters to them.",
+      "The objection is that the social theory makes 'whether James wrote a given word' no longer the editor's concern, although readers 'have every reason to keep' that distinction. If interpretations change when a word turns out to be a compositor's, the distinction plainly matters to readers."
+     ],
+     "key": "d",
+     "why": "The objection rests on readers' interest in who wrote a word. (d) shows that interest doing real work in reading.",
+     "src": "Countdown 5 Q76 (a fact that bears on a different claim) and Countdown 5 Q69"
+    },
+    {
+     "n": 21,
+     "type": "Assumption",
+     "stem": "The author's charge in the third paragraph, that the final-intention principle smuggles 'a claim about literary value' into 'a rule about documents', assumes that",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "a rule for choosing between texts ought not to rest on a judgment of literary merit that it never openly states.",
+      "the 1881 text of The Portrait of a Lady is a better novel than the text that James produced for the collected edition.",
+      "a writer's last word on a book is generally weaker than his first, since his late revisions reflect a changed sensibility.",
+      "Greg's distinction between substantive readings and accidentals cannot be applied to revisions as extensive as those James made."
+     ],
+     "codes": [
+      "K",
+      "A",
+      "X",
+      "N"
+     ],
+     "reasons": [
+      "'Smuggled' is a criticism only if hiding a value judgment inside a documentary rule is a fault. Negate it (a rule may quietly rest on such a judgment) and the charge loses its force.",
+      "The author need not prefer either text. The charge is that the principle assumes the last word is best, not that it is worst.",
+      "The author denies that the last word 'must be' the best. That does not require claiming it is generally worse.",
+      "Paragraph 3 says nothing about whether Greg's distinction can be applied. The charge does not depend on it."
+     ],
+     "key": "a",
+     "why": "To call a claim 'smuggled' is to object to its being hidden. The author's charge needs the premise that an editorial rule should not rest on an unstated value judgment; it needs no view on which James is better.",
+     "src": "AILET 5 Q34 and Sectional 2 Q22 (the assumption, not a claim the author need not hold)"
+    },
+    {
+     "n": 22,
+     "type": "Grammar",
+     "stem": "Choose the option that best replaces the words in brackets to make the sentence grammatically correct without changing its meaning.",
+     "quote": "\"James rewrote several of his early novels for the collected edition [, it left] readers with two texts to choose between.\"",
+     "after": null,
+     "opts": [
+      ", thereby left",
+      ", and thereby leaving",
+      ", thereby leaving",
+      "so as to leave"
+     ],
+     "codes": [
+      "G",
+      "G",
+      "K",
+      "G"
+     ],
+     "reasons": [
+      "'Thereby' is an adverb, not a conjunction, so it cannot join a second finite verb ('left') to the clause. It needs 'and thereby left' or 'thereby leaving'.",
+      "'And' must join like with like: 'rewrote… and thereby left'. 'And thereby leaving' pairs a finite verb with a participle.",
+      "'Thereby' + -ing attaches the result to the main clause: James rewrote the novels, and the result was two texts.",
+      "This is grammatical but turns the result into James's purpose, which changes the meaning."
+     ],
+     "key": "c",
+     "why": "The original is a comma splice (', it left'). The fix must express a result without a second subject. ', thereby leaving' does; ', thereby left' and ', and thereby leaving' each break a rule, and 'so as to leave' changes result into purpose.",
+     "src": "Countdown 10 Q69 and Q74 (grammar: comma splice, faulty 'and', infinitive of purpose)"
+    },
+    {
+     "n": 23,
+     "type": "Tone",
+     "stem": "Which of the following best describes the tone of the passage?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "Detached and analytical, because it lays out the competing editorial doctrines in turn without passing judgment on any of them.",
+      "Sceptical but hopeful, because it doubts the older doctrines while expecting digital editions to settle the quarrel they began.",
+      "Dismissive and impatient, because it treats the editors' debate as a scholastic quarrel of little interest to ordinary readers.",
+      "Exacting but fair-minded, because it separates Greg from his successors and grants the social theory and digital editions their real merits."
+     ],
+     "codes": [
+      "O",
+      "O",
+      "L",
+      "K"
+     ],
+     "reasons": [
+      "Analytical, yes, but the author judges every position: 'smuggled', 'pays for the correction', 'what it hides'.",
+      "'Sceptical' fits. 'Hopeful' does not: the author says the digital 'promise' hides a problem, and some works resist any choice.",
+      "Both words are wrong. The author says readers have 'every reason' to care and that 'whether James wrote a given word' is 'often the question a reader most wants answered'.",
+      "The author distinguishes Greg ('more modest than the uses later made of it') from the hardened principle, says the social theory 'corrects a real naivety' and that the digital 'promise is genuine', and is exacting about what each costs ('smuggled', 'pays for the correction', 'so is what it hides')."
+     ],
+     "key": "d",
+     "why": "The author is demanding about every position yet gives each its due, Greg included: exacting, but fair-minded.",
+     "src": "Countdown 5 Q75 ('detached and analytical' picked for a critical passage) and Sectional 1 (an echo word paired with an unsupported second word)"
+    },
+    {
+     "n": 24,
+     "type": "Inference (last paragraph)",
+     "stem": "Which of the following can be most reasonably inferred from the last paragraph of the passage?",
+     "quote": null,
+     "after": null,
+     "opts": [
+      "Works that their authors revised more than once were probably, for those authors, never truly finished, however settled their printed texts appeared.",
+      "A reader given every version of a revised novel, with nothing to guide the choice, is in effect being asked to do an editor's work without an editor's knowledge.",
+      "Digital editions are less honest than printed ones, since they hide the editor's own choices behind an apparently neutral display of every version.",
+      "A book its author could not leave alone records his final intention more faithfully than any single version of it, however carefully edited, can."
+     ],
+     "codes": [
+      "B",
+      "K",
+      "A",
+      "R"
+     ],
+     "reasons": [
+      "The paragraph says only that 'some works' 'may' record this. Extending it to every work revised more than once, even with 'probably', is a generalisation the paragraph does not make.",
+      "'A reader offered every text with no guidance… has not been freed from the editor's judgment so much as handed it, usually without the knowledge needed to exercise it.' Being handed the judgment without the knowledge is doing an editor's work without an editor's knowledge.",
+      "This adds a comparison with printed editions that the paragraph never makes. The digital edition hides the fact that the judgment has been passed to the reader, not any editor's choices.",
+      "This reuses 'intention, final or otherwise' and reverses it. The paragraph says such revisions may record 'less an intention… than the fact that… the book was never finished'."
+     ],
+     "key": "b",
+     "why": "The paragraph's inference is that displaying everything does not remove the need to judge; it moves the editor's judgment to a reader who usually lacks the editor's knowledge.",
+     "src": "AILET 2 Q38 (unearned 'every') and the author's-response miss (an added comparison)"
+    }
+   ]
+  }
+ ]
+}

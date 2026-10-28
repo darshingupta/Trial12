@@ -1,0 +1,364 @@
+<title>RC 800 Sectional 4</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap">
+<style>
+/* Layout: exam booklet. Sticky invigilator bar with the clock; the passage (reading face) beside its question column; results as a marked script. Ink-blue marks Sectional 4 in the series. */
+:root{
+  --bg:#eef1f4; --paper:#fbfcfd; --ink:#1a2230; --muted:#5a6676; --rule:#d5dbe3;
+  --accent:#23477a; --accent-soft:#e2e9f4; --accent-ink:#ffffff;
+  --right:#2a7a4d; --right-soft:#e1f1e7; --wrong:#b23f37; --wrong-soft:#f7e3e0; --skip:#9a6b0c; --skip-soft:#f6ecd5;
+  --f-read:"Literata", Georgia, "Times New Roman", serif;
+  --f-ui:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#10141b; --paper:#171c25; --ink:#e4e9f0; --muted:#97a3b3; --rule:#2a3240;
+  --accent:#86aee6; --accent-soft:#1b2a40; --accent-ink:#0d121a;
+  --right:#63c48c; --right-soft:#152d20; --wrong:#ee8a80; --wrong-soft:#3a1e1b; --skip:#e2b250; --skip-soft:#33290f;
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#10141b; --paper:#171c25; --ink:#e4e9f0; --muted:#97a3b3; --rule:#2a3240;
+  --accent:#86aee6; --accent-soft:#1b2a40; --accent-ink:#0d121a;
+  --right:#63c48c; --right-soft:#152d20; --wrong:#ee8a80; --wrong-soft:#3a1e1b; --skip:#e2b250; --skip-soft:#33290f;
+  color-scheme:dark;}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--f-ui)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1200px;margin:0 auto;padding-block:20px 80px}
+h1,h2,h3{margin:0;text-wrap:balance}
+h1{font:600 clamp(28px,4.4vw,40px)/1.15 var(--f-read)}
+h2{font:600 22px/1.25 var(--f-read)}
+h3{font:600 15px/1.35 var(--f-ui)}
+p{margin:0}
+.muted{color:var(--muted)}
+.eyebrow{font:500 12px/1.4 var(--f-mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.btn{border:1px solid var(--rule);background:var(--paper);border-radius:8px;padding:9px 16px;cursor:pointer;font-weight:500}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.danger{background:var(--wrong);color:var(--paper);border-color:var(--wrong)}
+.stack{display:flex;flex-direction:column;gap:20px}
+/* start */
+.intro{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;align-items:start;padding-top:18px}
+.intro > *{min-width:0}
+.sheet{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:20px 22px;display:flex;flex-direction:column;gap:12px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.fact{border:1px solid var(--rule);border-radius:10px;padding:10px 12px;background:var(--paper)}
+.fact b{display:block;font:500 22px/1.2 var(--f-mono);font-variant-numeric:tabular-nums}
+.fact span{font-size:13px;color:var(--muted)}
+.plist{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 12px;font-size:14px}
+.plist b{font:500 12px/1.9 var(--f-mono);color:var(--muted)}
+ol.rules{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.past{display:flex;flex-direction:column;gap:6px;font-size:14px}
+.past div{display:flex;justify-content:space-between;gap:10px;border-top:1px solid var(--rule);padding-top:6px;font-variant-numeric:tabular-nums}
+/* bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--rule)}
+.bar-in{max-width:1200px;margin:0 auto;padding-block:10px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.clock{font:500 22px/1 var(--f-mono);font-variant-numeric:tabular-nums;min-width:76px}
+.clock.low{color:var(--wrong)}
+.count{font:500 13px var(--f-mono);color:var(--muted)}
+.spacer{flex:1}
+.tabs{display:flex;flex-wrap:wrap;gap:6px}
+.tab{border:1px solid var(--rule);background:var(--paper);border-radius:999px;padding:4px 11px;font:500 12px/1.5 var(--f-mono);cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.tab[aria-current="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.tab .n{opacity:.75}
+.tab .fl{color:var(--skip)}
+.tab[aria-current="true"] .fl{color:inherit}
+.saved{font:12px var(--f-mono);color:var(--muted)}
+/* test */
+.test{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:22px;align-items:start;padding-top:18px}
+.test > *{min-width:0}
+.passage{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:20px 24px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 72px);max-height:calc(100vh - 96px);overflow:auto}
+.passage .head{display:flex;flex-direction:column;gap:4px;margin-bottom:12px}
+.passage .body{font:16.5px/1.72 var(--f-read);display:flex;flex-direction:column;gap:12px;max-width:68ch}
+.qs{display:flex;flex-direction:column;gap:14px}
+.q{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.q .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.qn{font:500 12px var(--f-mono);color:var(--muted);letter-spacing:.05em}
+.stem{font-weight:500}
+.quote{font:15.5px/1.6 var(--f-read);background:var(--bg);border-radius:8px;padding:10px 12px}
+.opts{display:flex;flex-direction:column;gap:6px}
+.opt{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;align-items:start;border:1px solid var(--rule);border-radius:8px;padding:8px 10px;cursor:pointer;background:var(--paper);position:relative}
+.opt:hover{border-color:var(--accent)}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt .L{font:500 13px/1.6 var(--f-mono);width:24px;height:24px;border-radius:50%;border:1px solid var(--rule);display:grid;place-items:center}
+.opt.sel{border-color:var(--accent);background:var(--accent-soft)}
+.opt.sel .L{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.opt:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.flag{border:0;background:none;color:var(--muted);font:500 12px var(--f-mono);cursor:pointer;padding:2px 4px}
+.flag[aria-pressed="true"]{color:var(--skip)}
+.clear{border:0;background:none;color:var(--muted);font:12px var(--f-ui);cursor:pointer;text-decoration:underline;padding:0;align-self:flex-start}
+.navrow{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.confirm{background:var(--skip-soft);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:14px}
+/* results */
+.scorehead{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.stat{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:12px 14px}
+.stat b{display:block;font:500 26px/1.15 var(--f-mono);font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted)}
+.traps{display:flex;flex-direction:column;gap:8px}
+.trap{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;align-items:center}
+.code{font:600 13px var(--f-mono);width:30px;height:26px;border-radius:6px;display:grid;place-items:center;background:var(--wrong-soft);color:var(--wrong)}
+.tbar{height:8px;border-radius:4px;background:var(--wrong);opacity:.85}
+.review{display:flex;flex-direction:column;gap:12px}
+.rq{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--rule);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.rq.r{border-left-color:var(--right)} .rq.w{border-left-color:var(--wrong)} .rq.u{border-left-color:var(--skip)}
+.rtop{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.ro{font-size:14px;padding:6px 8px;border-radius:6px;display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:6px;align-items:start}
+.ro.ans{background:var(--right-soft)} .ro.bad{background:var(--wrong-soft)}
+.ro b{font-family:var(--f-mono)}
+.pill{font:500 11px/1.5 var(--f-mono);padding:1px 8px;border-radius:999px;background:var(--bg);color:var(--muted);white-space:nowrap;align-self:start}
+.pill.w{background:var(--wrong-soft);color:var(--wrong)} .pill.r{background:var(--right-soft);color:var(--right)} .pill.u{background:var(--skip-soft);color:var(--skip)}
+.why{font-size:14px;border-top:1px dashed var(--rule);padding-top:8px;display:flex;flex-direction:column;gap:6px}
+.why ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+details.pz summary,details.ex summary{cursor:pointer;color:var(--muted);font-size:13px}
+.ptable{overflow-x:auto;background:var(--paper);border:1px solid var(--rule);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:8px 12px;border-bottom:1px solid var(--rule);text-align:left}
+th{font:500 12px var(--f-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+td.n{font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:right}
+tr:last-child td{border-bottom:0}
+.banner{background:var(--skip-soft);border:1px solid var(--rule);border-radius:10px;padding:10px 14px;font-size:14px}
+@media (max-width:860px){
+  .intro,.test{grid-template-columns:1fr}
+  .passage{position:static;max-height:none}
+  .scorehead{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (prefers-reduced-motion:no-preference){ .opt{transition:background .12s,border-color .12s} }
+</style>
+
+<div id="app"></div>
+
+<script>
+/* ------------------------------------------------------------------ CONTENT */
+const DATA=__DATA__;
+const SEAL="__SEAL__";
+const P=DATA.passages, CODES=DATA.codes, QS=[];
+P.forEach((p,pi)=>p.qs.forEach(q=>{ q.n=QS.length+1; q.pi=pi; QS.push(q); }));
+const LIMIT=45*60*1000, L="abcd", TOTAL=QS.length, LSKEY="rc800s4-current";
+let REV=null;
+function unseal(){ if(REV) return REV; const b=atob(SEAL), k="rc800-sectional-4", out=new Uint8Array(b.length);
+  for(let i=0;i<b.length;i++) out[i]=b.charCodeAt(i)^((k.charCodeAt(i%k.length)+i*7)%256);
+  REV=JSON.parse(new TextDecoder().decode(out)); return REV; }
+
+/* ------------------------------------------------------------------ STATE */
+let S=null, db=null, view="start", past=[], saveTimer=null, tickTimer=null, lastTick=0, saveMsg="";
+const app=document.getElementById("app");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt=ms=>{ms=Math.max(0,ms); const m=Math.floor(ms/60000), s=Math.floor(ms%60000/1000); return String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");};
+const ls={get(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},del(k){try{localStorage.removeItem(k)}catch(e){}}};
+
+function newAttempt(){ return {id:"att-"+Date.now().toString(36), startedAt:Date.now(), status:"in_progress", answers:{}, flags:{}, passageMs:{}, changes:{}, firstAt:{}, cur:0}; }
+function elapsed(st=S){ return st ? Math.min(LIMIT,(st.submittedAt||Date.now())-st.startedAt) : 0; }
+
+function score(st){
+  const R=unseal(); let r=0,w=0,u=0; const traps={}, per=[];
+  QS.forEach(q=>{ const a=st.answers[q.n], k=R.key[q.n-1]; let t=null;
+    if(!a) u++; else if(a===k) r++; else { w++; t=R.traps[q.n-1][a]; if(t) traps[t]=(traps[t]||0)+1; }
+    per.push({n:q.n,picked:a||null,correct:k,trap:t}); });
+  return {r,w,u,net:r-0.25*w,traps,per};
+}
+
+/* ------------------------------------------------------------------ PERSISTENCE */
+function persistSoon(){ ls.set(LSKEY,S); clearTimeout(saveTimer); saveTimer=setTimeout(persistNow,1500); }
+async function persistNow(){
+  if(S&&S.status==="in_progress") ls.set(LSKEY,S);
+  if(!db||!S) return;
+  try{
+    const body=JSON.parse(JSON.stringify(S));
+    if(S.status==="submitted"){ const sc=score(S); body.result={right:sc.r,wrong:sc.w,unanswered:sc.u,net:sc.net,traps:sc.traps,perQuestion:sc.per,timeMs:elapsed()}; }
+    await db.collection("attempts").doc(S.id).set(body);
+    saveMsg="Saved"; paintSaved();
+  }catch(e){ saveMsg= e&&e.code==="quota_exceeded" ? "Storage full: kept in this browser only" : "Saved in this browser"; paintSaved(); }
+}
+function paintSaved(){ const el=document.getElementById("saved"); if(el) el.textContent=saveMsg; }
+async function loadPast(){
+  if(!db) return;
+  try{ const snap=await db.collection("attempts").orderBy("startedAt","desc").limit(20).get();
+    past=snap.docs.map(d=>d.data()).filter(Boolean); if(view==="start") render(); }catch(e){}
+}
+
+/* ------------------------------------------------------------------ RENDER */
+function render(){ if(view==="start") return renderStart(); if(view==="test") return renderTest(); if(view==="result") return renderResult(); }
+
+function renderStart(){
+  const local=ls.get(LSKEY);
+  const resume=(local&&local.status==="in_progress")?local:(past.find(a=>a.status==="in_progress")||null);
+  const done=past.filter(a=>a.status==="submitted"&&a.result);
+  const left=resume?LIMIT-(Date.now()-resume.startedAt):0;
+  app.innerHTML=`<div class="gut"><div class="wrap"><div class="intro">
+    <div class="stack">
+      <p class="eyebrow">Sectional 4 · Reading comprehension · harder than Sectional 1</p>
+      <h1>RC 800 Sectional 4</h1>
+      <p style="font:17px/1.6 var(--f-read);max-width:62ch">Four passages, 24 questions, Countdown CLAT formats at GMAT 800 and CAT difficulty. Every passage carries at least one strengthen or weaken question and at least one assumption or conclusion question: nine critical-reasoning items in all. The wrong options are built on the traps in your error log, and the four options in each question are matched for length, so length tells you nothing.</p>
+      <div class="facts">
+        <div class="fact"><b>24</b><span>questions · 4 passages × 6</span></div>
+        <div class="fact"><b>45:00</b><span>hard limit; submits itself at zero</span></div>
+        <div class="fact"><b>+1 / −0.25</b><span>blank scores 0</span></div>
+      </div>
+      <div class="plist">${P.map((p,i)=>`<b>P${i+1}</b><span>${esc(p.kind)}</span>`).join("")}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        ${resume&&left>0?`<button class="btn primary" id="resume">Resume (${fmt(left)} left)</button><button class="btn" id="fresh">Start a fresh attempt</button>`:`<button class="btn primary" id="start">Start the clock</button>`}
+      </div>
+    </div>
+    <div class="sheet">
+      <h3>Before you start</h3>
+      <ol class="rules">
+        <li>The clock runs for 45 minutes and submits your answers when it reaches zero. A reload does not stop it.</li>
+        <li>Answers and flags save as you go, so a reload or a dropped connection won't lose them.</li>
+        <li>Submit asks you to confirm. Answers, explanations and trap codes appear only after that.</li>
+        <li>Each wrong answer is tagged with the trap it fell for, using the codes from your error log.</li>
+      </ol>
+      ${done.length?`<div class="past"><p class="eyebrow">Previous attempts</p>${done.slice(0,5).map(a=>`<div><span>${new Date(a.startedAt).toLocaleDateString(undefined,{day:"numeric",month:"short"})}</span><span>${Number(a.result.net).toFixed(2)} / ${TOTAL} · ${a.result.right} right · ${a.result.wrong} wrong · ${fmt(a.result.timeMs)}</span></div>`).join("")}</div>`:""}
+    </div>
+  </div></div></div>`;
+  const go=st=>{ S=st; view="test"; render(); persistNow(); startTick(); window.scrollTo({top:0}); };
+  document.getElementById("start")?.addEventListener("click",()=>{ ls.del(LSKEY); go(newAttempt()); });
+  document.getElementById("fresh")?.addEventListener("click",()=>{ ls.del(LSKEY); go(newAttempt()); });
+  document.getElementById("resume")?.addEventListener("click",()=>go(resume));
+}
+
+const answeredIn=pi=>P[pi].qs.filter(q=>S.answers[q.n]).length;
+const flaggedIn=pi=>P[pi].qs.filter(q=>S.flags[q.n]).length;
+
+function renderTest(){
+  const p=P[S.cur], answered=Object.keys(S.answers).length;
+  app.innerHTML=`<div class="bar"><div class="bar-in gut">
+      <span class="clock" id="clock" role="timer" aria-label="Time left">45:00</span>
+      <span class="count" id="count">${answered}/${TOTAL} answered</span>
+      <nav class="tabs" aria-label="Passages">${P.map((x,i)=>`<button class="tab" data-p="${i}" aria-current="${i===S.cur}">P${i+1}<span class="n">${answeredIn(i)}/${x.qs.length}</span>${flaggedIn(i)?`<span class="fl" title="flagged">⚑${flaggedIn(i)}</span>`:""}</button>`).join("")}</nav>
+      <span class="spacer"></span><span class="saved" id="saved">${esc(saveMsg)}</span>
+      <button class="btn danger" id="submit">Submit</button>
+    </div></div>
+    <div class="gut"><div class="wrap" style="padding-top:0">
+      <div id="confirmBox"></div>
+      <div class="test">
+        <article class="passage" aria-label="${esc(p.label)}">
+          <div class="head"><p class="eyebrow">${esc(p.kind)}</p><h2>${esc(p.label)}</h2></div>
+          <div class="body">${p.text.map(t=>`<p>${esc(t)}</p>`).join("")}</div>
+        </article>
+        <section class="qs" aria-label="Questions">${p.qs.map(qCard).join("")}
+          <div class="navrow">${S.cur>0?`<button class="btn" id="prev">← Passage ${S.cur}</button>`:"<span></span>"}${S.cur<P.length-1?`<button class="btn primary" id="next">Passage ${S.cur+2} →</button>`:`<button class="btn danger" id="submit2">Submit</button>`}</div>
+        </section>
+      </div>
+    </div></div>`;
+  app.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>switchP(+b.dataset.p)));
+  document.getElementById("prev")?.addEventListener("click",()=>switchP(S.cur-1));
+  document.getElementById("next")?.addEventListener("click",()=>switchP(S.cur+1));
+  ["submit","submit2"].forEach(id=>document.getElementById(id)?.addEventListener("click",askSubmit));
+  app.querySelectorAll("input[type=radio]").forEach(r=>r.addEventListener("change",()=>pick(+r.dataset.q,r.value)));
+  app.querySelectorAll(".flag").forEach(b=>b.addEventListener("click",()=>{ const n=+b.dataset.q; S.flags[n]=!S.flags[n]; persistSoon(); renderTest(); }));
+  app.querySelectorAll(".clear").forEach(b=>b.addEventListener("click",()=>{ const n=+b.dataset.q; delete S.answers[n]; persistSoon(); renderTest(); }));
+  tickClock();
+}
+
+function stemHTML(q){
+  return (q.quote?`<p class="stem">${esc(q.stem)}</p><div class="quote">${esc(q.quote)}</div>${q.after?`<p class="stem">${esc(q.after)}</p>`:""}`:`<p class="stem">${esc(q.stem)}</p>`);
+}
+function qCard(q){
+  const a=S.answers[q.n];
+  return `<div class="q" id="q${q.n}">
+    <div class="top"><span class="qn">Q${q.n}</span><button class="flag" data-q="${q.n}" aria-pressed="${!!S.flags[q.n]}">${S.flags[q.n]?"⚑ Flagged":"⚐ Flag"}</button></div>
+    ${stemHTML(q)}
+    <div class="opts" role="radiogroup" aria-label="Question ${q.n}">${q.o.map((t,i)=>{const l=L[i];return `<label class="opt${a===l?" sel":""}"><input type="radio" id="q${q.n}${l}" name="q${q.n}" value="${l}" data-q="${q.n}"${a===l?" checked":""}><span class="L">${l}</span><span>${esc(t)}</span></label>`}).join("")}</div>
+    ${a?`<button class="clear" data-q="${q.n}">Clear answer</button>`:""}
+  </div>`;
+}
+function pick(n,l){
+  if(!S||S.status!=="in_progress") return;
+  if(S.answers[n]&&S.answers[n]!==l) S.changes[n]=(S.changes[n]||0)+1;
+  if(!S.firstAt[n]) S.firstAt[n]=Date.now()-S.startedAt;
+  S.answers[n]=l;
+  const card=document.getElementById("q"+n);
+  if(card){ card.querySelectorAll(".opt").forEach(o=>o.classList.toggle("sel",o.querySelector("input").value===l));
+    if(!card.querySelector(".clear")){ const b=document.createElement("button"); b.className="clear"; b.dataset.q=n; b.textContent="Clear answer"; b.addEventListener("click",()=>{ delete S.answers[n]; persistSoon(); renderTest(); }); card.appendChild(b);} }
+  const cnt=document.getElementById("count"); if(cnt) cnt.textContent=Object.keys(S.answers).length+"/"+TOTAL+" answered";
+  app.querySelectorAll(".tab").forEach((b,i)=>{ const s=b.querySelector(".n"); if(s) s.textContent=answeredIn(i)+"/"+P[i].qs.length; });
+  persistSoon();
+}
+function switchP(i){ accrue(); S.cur=i; persistSoon(); renderTest(); window.scrollTo({top:0}); }
+function accrue(){ const now=Date.now(); if(lastTick&&view==="test"&&S&&!document.hidden){ const k=P[S.cur].id; S.passageMs[k]=(S.passageMs[k]||0)+(now-lastTick);} lastTick=now; }
+function startTick(){ clearInterval(tickTimer); lastTick=Date.now(); tickTimer=setInterval(()=>{ accrue(); tickClock(); },1000); }
+function tickClock(){
+  if(!S||view!=="test") return;
+  const left=LIMIT-(Date.now()-S.startedAt);
+  if(left<=0){ submit(true); return; }
+  const el=document.getElementById("clock"); if(!el) return;
+  el.textContent=fmt(left); el.classList.toggle("low",left<5*60*1000);
+}
+function askSubmit(){
+  const un=TOTAL-Object.keys(S.answers).length, fl=Object.values(S.flags).filter(Boolean).length;
+  const box=document.getElementById("confirmBox");
+  box.innerHTML=`<div class="confirm" role="alertdialog" aria-label="Confirm submission"><p><b>Submit now?</b> ${un} unanswered${fl?`, ${fl} flagged`:""}. You can't change answers after this.</p><span class="spacer"></span><button class="btn" id="keep">Keep working</button><button class="btn danger" id="really">Submit and see results</button></div>`;
+  box.scrollIntoView({block:"nearest"});
+  document.getElementById("keep").addEventListener("click",()=>box.innerHTML="");
+  document.getElementById("really").addEventListener("click",()=>submit(false));
+}
+function submit(auto){
+  if(!S||S.status!=="in_progress") return;
+  accrue(); clearInterval(tickTimer);
+  S.status="submitted"; S.auto=!!auto; S.submittedAt=auto?Math.min(Date.now(),S.startedAt+LIMIT):Date.now();
+  ls.del(LSKEY); view="result"; persistNow(); render(); window.scrollTo({top:0}); loadPast();
+}
+
+function renderResult(){
+  const R=unseal(), sc=score(S), t=elapsed();
+  const trapRows=Object.entries(sc.traps).sort((a,b)=>b[1]-a[1]); const maxT=Math.max(1,...trapRows.map(x=>x[1]));
+  const pRows=P.map(p=>{ const qs=p.qs; const r=qs.filter(q=>S.answers[q.n]===R.key[q.n-1]).length, w=qs.filter(q=>S.answers[q.n]&&S.answers[q.n]!==R.key[q.n-1]).length;
+    return `<tr><td>${esc(p.label)} · ${esc(p.kind)}</td><td class="n">${r}</td><td class="n">${w}</td><td class="n">${qs.length-r-w}</td><td class="n">${fmt(S.passageMs[p.id]||0)}</td></tr>`; }).join("");
+  app.innerHTML=`<div class="gut"><div class="wrap stack">
+    <div class="stack" style="gap:8px"><p class="eyebrow">Result · ${new Date(S.startedAt).toLocaleString(undefined,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}</p>
+      <h1>${sc.net.toFixed(2)} out of ${TOTAL}</h1>
+      <p class="muted">Time taken ${fmt(t)} of 45:00${S.auto?" · submitted automatically when time ran out":""}</p></div>
+    <div class="scorehead">
+      <div class="stat"><b>${sc.r}</b><span>right (+${sc.r})</span></div>
+      <div class="stat"><b>${sc.w}</b><span>wrong (−${(0.25*sc.w).toFixed(2)})</span></div>
+      <div class="stat"><b>${sc.u}</b><span>blank (0)</span></div>
+      <div class="stat"><b>${sc.r+sc.w?Math.round(100*sc.r/(sc.r+sc.w)):0}%</b><span>accuracy on attempted</span></div>
+    </div>
+    <div class="intro" style="padding-top:0">
+      <div class="sheet"><h3>Traps you fell for</h3>
+        ${trapRows.length?`<div class="traps">${trapRows.map(([c,n])=>`<div class="trap"><span class="code">${c}</span><div><div style="font-weight:500">${esc(CODES[c][0])}</div><div class="muted" style="font-size:13px">${esc(CODES[c][1])}</div><div class="tbar" style="width:${Math.max(8,100*n/maxT)}%;margin-top:4px"></div></div><b style="font-family:var(--f-mono)">${n}</b></div>`).join("")}</div>`:`<p>No traps sprung. Every answer you gave was right.</p>`}
+        <p class="muted" style="font-size:13px">Send me your time and the questions you got wrong or skipped, with what you marked, and I'll aim Sectional 5 at the pattern.</p>
+      </div>
+      <div class="ptable"><table><thead><tr><th>Passage</th><th style="text-align:right">Right</th><th style="text-align:right">Wrong</th><th style="text-align:right">Blank</th><th style="text-align:right">Time</th></tr></thead><tbody>${pRows}</tbody></table></div>
+    </div>
+    <div class="stack" style="gap:10px"><h2>Every question, marked</h2>
+      <div class="review">${P.map(p=>`<details class="pz"><summary>${esc(p.label)}: re-read the passage</summary><div style="font:15px/1.65 var(--f-read);display:flex;flex-direction:column;gap:8px;padding:8px 2px">${p.text.map(x=>`<p>${esc(x)}</p>`).join("")}</div></details>`+p.qs.map(q=>rCard(q,R)).join("")).join("")}</div>
+    </div>
+    <div><button class="btn" id="home">Back to start</button></div>
+  </div></div>`;
+  document.getElementById("home").addEventListener("click",()=>{ view="start"; S=null; render(); loadPast(); });
+}
+function rCard(q,R){
+  const i=q.n-1, a=S.answers[q.n], k=R.key[i], st=!a?"u":a===k?"r":"w", tr=R.traps[i], code=st==="w"?tr[a]:null;
+  return `<div class="rq ${st}">
+    <div class="rtop"><span class="qn">Q${q.n} · ${esc(P[q.pi].label)} · ${esc(R.type[i])}</span>
+      <span style="display:flex;gap:6px;flex-wrap:wrap">${st==="r"?`<span class="pill r">Right</span>`:st==="u"?`<span class="pill u">Blank · answer ${k}</span>`:`<span class="pill w">You: ${a} · answer ${k} · Trap ${code}: ${esc(CODES[code][0])}</span>`}${S.changes[q.n]?`<span class="pill">changed ${S.changes[q.n]}×</span>`:""}</span></div>
+    ${stemHTML(q)}
+    <div class="opts">${q.o.map((t,j)=>{const l=L[j];const cls=l===k?"ans":(l===a?"bad":"");const tag=l===k?`<span class="pill r">key</span>`:`<span class="pill">${tr[l]}</span>`;return `<div class="ro ${cls}"><b>${l}</b><span>${esc(t)}</span>${tag}</div>`}).join("")}</div>
+    <div class="why"><p>${esc(R.why[i])}</p>
+      <details class="ex"${st==="w"?" open":""}><summary>Why each option is right or wrong</summary><ul>${L.split("").map(l=>`<li><b>${l}${l===k?" (key)":" · "+tr[l]}</b>: ${esc(R.reasons[i][l])}</li>`).join("")}</ul></details>
+      <p class="muted" style="font-size:13px">Modelled on: ${esc(R.src[i])}</p></div>
+  </div>`;
+}
+
+/* ------------------------------------------------------------------ BOOT */
+document.addEventListener("visibilitychange",()=>{ if(view==="test"){ accrue(); if(document.hidden) persistNow(); }});
+function start(data){
+  if(data&&data.S){ S=data.S; view=data.view||"start"; }
+  else { const local=ls.get(LSKEY);
+    if(local&&local.status==="in_progress"&&Date.now()-local.startedAt>=LIMIT){ S=local; view="test"; submit(true); } }
+  render();
+  if(view==="test") startTick();
+  (async()=>{ try{ db=window.claude?await window.claude.use("db"):null; }catch(e){ db=null; }
+    if(db){ await loadPast();
+      if(view==="start"){ const open=past.find(a=>a.status==="in_progress"&&!ls.get(LSKEY));
+        if(open&&Date.now()-open.startedAt>=LIMIT){ S=open; view="test"; submit(true); } }
+      else if(S) persistNow(); } })();
+}
+window.claude?.hot?.snapshot?.(()=>({S,view}));
+window.claude?.hot?.ready ? window.claude.hot.ready(start) : start(window.claude?.hot?.data ?? {});
+</script>
