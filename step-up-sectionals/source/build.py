@@ -143,8 +143,8 @@ def qrange(i):
 
 
 # ---------------------------------------------------------------- Word paper
-def build_paper():
-    d = base_doc()
+def build_paper(d=None, save=True):
+    d = d or base_doc()
     para(d, M.TITLE.upper(), bold=True, size=24, color=ACC, align=WD_ALIGN_PARAGRAPH.CENTER, after=2)
     para(d, META["subtitle"], size=12.5, color=MUT, align=WD_ALIGN_PARAGRAPH.CENTER, after=16)
     t = d.add_table(rows=0, cols=2); t.style = "Table Grid"; t.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -191,12 +191,13 @@ def build_paper():
     para(d, "", after=10)
     for lab in ["Right: ______", "Wrong: ______", "Skipped: ______", "Score (+1 / −0.25): ______", f"Time taken (limit {M.MINUTES}:00): ______"]:
         para(d, lab, after=6)
-    d.save(os.path.join(OUT, META["prefix"] + "_Paper.docx"))
+    if save: d.save(os.path.join(OUT, META["prefix"] + "_Paper.docx"))
+    return d
 
 
 # ---------------------------------------------------------------- Word key
-def build_key():
-    d = base_doc()
+def build_key(d=None, save=True):
+    d = d or base_doc()
     para(d, f"{M.TITLE.upper()}: ANSWER KEY AND SOLUTIONS", bold=True, size=17, color=ACC, after=4)
     para(d, META["key_lede"], color=MUT, after=10)
 
@@ -259,9 +260,16 @@ def build_key():
                 x.add_run(q.get("reasons", {}).get(l, ""))
             x = d.add_paragraph(); r = x.add_run("Modelled on. "); r.bold = True; r.font.color.rgb = MUT
             r2 = x.add_run(q.get("src", "")); r2.font.color.rgb = MUT
-    d.save(os.path.join(OUT, META["prefix"] + "_Answer_Key.docx"))
+    if save: d.save(os.path.join(OUT, META["prefix"] + "_Answer_Key.docx"))
+    return d
 
+
+def build_complete():
+    d = build_paper(save=False)
+    d.add_page_break()
+    build_key(d, save=False)
+    d.save(os.path.join(OUT, META["prefix"] + "_Complete.docx"))
 
 if __name__ == "__main__":
-    build_html(); build_paper(); build_key()
+    build_html(); build_paper(); build_key(); build_complete()
     print("built", META["prefix"], "->", OUT)
