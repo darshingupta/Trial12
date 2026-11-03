@@ -9,6 +9,7 @@ MINUTES = 30
 
 
 
+
 P = []
 
 
@@ -165,11 +166,11 @@ dict(type="Inference from a paragraph",
  ans="a", traps={"b": "L", "c": "R", "d": "L"}),
 dict(type="Function of a detail",
  stem="The author notes that the island opossums were found 'to age more slowly by physiological measures, not merely to die later' primarily in order to:",
- o=["show that the opossums confirmed the theory's prediction about how long animals live rather than about how fast their bodies decline",
+ o=["show that the theory's prediction holds for animals that cannot fly, and not only for the birds and bats already mentioned",
     "show that the opossums met the theory's real prediction, which concerns how fast bodies decline, not merely how long animals survive",
     "explain why, as the last paragraph goes on to say, the opossum result came to confirm less than had once been supposed",
     "establish that slower ageing, rather than freedom from predators, is why island animals outlive their relatives on the mainland"],
- ans="b", traps={"a": "L", "c": "L", "d": "B"}),
+ ans="b", traps={"a": "T", "c": "L", "d": "B"}),
 dict(type="Inference from a quoted line",
  stem="Read the following line from the passage: 'it does mean that the island opossums confirmed less than was once supposed, and the guppies refuted less.' Which of the following can be most reasonably inferred from the quoted line?",
  o=["The opossums supported the theory less than the guppies undermined it, so that the balance of evidence now runs against the theory",
@@ -296,3 +297,11 @@ META = {
   "C": "A change caused by something else (new schools) offered as an example of the effect of counting."
  }
 }
+
+META["audit"] = [
+ "Round 1 (first draft). The blind solver matched all 24 keys and found no question with two defensible answers. It rated about 12 questions Easy: keys that paraphrased a single sentence, and distractors that gave themselves away with absolutes ('without reservation', 'no bearing at all') while the keys were hedged. It also caught three wording slips and noted that the census passage draws on familiar prep material.",
+ "Repairs after round 1. Q3 ('importunate'), Q6 (the clock remark) and Q18 ('not a programme but a neglect') were replaced by harder questions: the 'sweetened' pun, the 'never before brought the stamp fee' irony and the 'confirmed less … refuted less' line. Options were rebuilt on 14 other questions, hedges were moved into distractors and earned strong words into some keys, and the three slips were fixed.",
+ "Round 2. All 24 keys matched again, and the Easy count fell to 5 (Q3, Q8, Q17, Q20, Q21). Q20 could be answered from the shape of its options and Q21 had twin distractors. All five were rebuilt; Q20 is now a two-by-two grid of device against meaning.",
+ "Round 3. All five repaired questions had one defensible answer; Q17 still had a mirror-image distractor, which was replaced and solved once more (Medium, no flags).",
+ "Final verdict from the solver: no ambiguous questions and no errors; 2 Easy (Q3, and Q20 on the border), 19 Medium and 3 Hard (Q6, Q14, Q16); no length, hedging or twin tells; an expected score of about 18–20 out of 24 for a strong candidate; one clear step above CL Countdown.",
+]

@@ -227,3 +227,4 @@ EX[20] = dict(why="'As though it were the weather' is an explicit comparison mar
     "d": "Right meaning, wrong device. A metaphor would say the sacrifice is the weather; 'as though' makes this a simile. Your CL misses on 'functions like …' were the same confusion."},
  src="CLAT 2023 Q14 ('Which of the following is a metaphor?') and CLAT 2026 Q17, combined into a two-by-two grid of device and meaning, so that no option is singled out by its shape. You marked similes as metaphors in CD11 Q10 and P10 Q14.")
 EX[21]["r"]["d"] = "Right first half, false second half. The author says the opposite: 'An obligation that cannot be measured cannot be enforced.'"
+EX[17]["r"]["a"] = "A reason for citing the opossums at all, not for the clause the question quotes. The clause contrasts slower bodily ageing with merely dying later."

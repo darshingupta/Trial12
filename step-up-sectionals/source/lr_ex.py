@@ -132,3 +132,42 @@ EX = {
     "d": "60 bookings less a quarter is about 45 patients against a capacity of about 44, so this probably adds to the wait."},
  src="CLAT 2025 Q86 ('which of the following is the least likely a cause of homelessness?'). The trap is reading the attendance register as proof of something it does not show."),
 }
+
+# ---------------------------------------------------------------- round-2 replacements (after the second blind solve)
+EX[1]["why"] = "Paragraph 2: attenders differ from absentees 'in ways that would raise their marks whether or not they attended', and a rule 'can only move bodies into rooms'. So the raw gap between the two groups is larger than anything compelling attendance could deliver; paragraph 3's evidence (attendance fell, results held) points the same way."
+EX[3] = dict(why="The author's evidence is that second-year results were 'no different' after attendance fell, and the author infers that those who stopped coming lost little. If they later failed the papers built on those courses twice as often as comparable students from years when attendance was compulsory, the loss was real but surfaced after the second-year examination. The measure the author relied on missed it.",
+ r={"a": "Hits the fairness point in paragraph 4, not the argument that the rule does not raise marks.",
+    "b": "More of the same correlation, which the author has already explained away.",
+    "c": "If attendance recovered without the rule, that, if anything, supports dropping it."},
+ src="CLAT 2023 Q108 and Q113 ('which, if true, would most weaken the author's arguments'). The weakener attacks the measure the evidence used, and it compares like with like so that the author's own objection to attender–absentee comparisons does not apply. Weaken runs at 79.5% in your CR.")
+EX[10] = dict(why="The author names two obstacles to the machines: they 'are costly, and many smallholders cannot get one on the days when their fields are ready'. A hire pool scheduled around each area's harvest removes both: no purchase, and a machine when the field is ready. That takes away the reason to burn and keeps the June date, so the water savings stay.",
+ r={"a": "Meets the cost obstacle but not the timing one: a smallholder who still cannot afford half the price, or cannot get a machine on the right days, still burns.",
+    "b": "Aimed at pumping, not at burning.",
+    "c": "Punishes the act without removing the reason for it. On the author's own lesson it is likely to be absorbed at another margin, for instance by burning at night."},
+ src="CLAT 2023 Q114 ('an effective way of making print media more competitive') and CLAT 2025 Q106 ('a plausible solution'). Every option is a real policy idea; only one meets both of the author's stated obstacles.")
+EX[11] = dict(why="The PIN was known only to Ms. Rao and Mr. Kohli (Fact 4), and Ms. Rao was not in the building (Facts 6 and 7), so Mr. Kohli keyed it in. The card was locked at 6:00 p.m. in a drawer that opens only with a key; Ms. Rao kept her key, left without opening it again and did not return (Fact 6). The card was used at 1:14 a.m., so the drawer must have been opened with the master key before then. Who opened it, and exactly when, is not fixed.",
+ r={"a": "Not forced: Fact 7 limits who was in the building only from 8:00 p.m. Someone could have used the master key between 6:00 and 8:00 p.m.",
+    "c": "Not forced: the card had to be back by 7:00 a.m., and Mr. Jain or Ravi could have returned it after Mr. Kohli left.",
+    "d": "Not forced: someone else at the door could have swiped the card while Mr. Kohli keyed in the PIN."},
+ src="CLAT 2026 Q94–95 (most reasonable inference; necessary condition). All four options start with the same true clause, and the second clauses mix a person, a method and two times, so only the timeline decides. You included too much in theft-set 'must' combinations in CD5 Q45 and P16 Q86.")
+EX[14] = dict(why="The camera films only the building's single entrance (Fact 7), and Ravi was inside the building from 8:00 p.m. to 7:00 a.m., so he never had to pass it. His absence from the recordings says nothing about where he went inside the building, including the strongroom.",
+ r={"a": "The clock offset changes the times on the recordings, not who appears in them.",
+    "b": "Fact 4 says only Ms. Rao and Mr. Kohli knew the PIN, so the facts do not leave this open, and the detective's argument does not depend on it.",
+    "c": "A key kept in his room makes him one possible user of it, but anyone in the building could have taken it from the hook. It shows nothing either way."},
+ src="CLAT 2026 Q93 ('Identifying the logical flaw in the argument'). The flaw is reading an absence in a record that could never have shown the thing concluded. Flaw and role questions run at 54.5% in your CR.")
+EX[16] = dict(why="The strongroom was empty and locked from 8:00 p.m., it was opened from outside only once (1:14 a.m.), and the door locks itself as soon as it is released. Rule out anyone being let in from inside, and whoever was in the strongroom at 1:52 a.m. to take the photographs must have gone in through that one opening, before the door next closed.",
+ r={"a": "Not necessary: the photographer could have been Ravi, and even Mr. Jain could have walked in later while the door was still held open.",
+    "c": "Impossible, not necessary: Mr. Kohli left the building at 1:25 a.m. true time.",
+    "d": "Not necessary: Mr. Kohli or Mr. Jain could have used the master key; only the timing (before 1:14 a.m.) is forced."},
+ src="CLAT 2026 Q95 ('What condition is necessary for Chitra to have stolen the medallion?'). Necessary versus sufficient tripped you in WU6 Q106 and P4 Q108.")
+EX[18] = dict(why="The author keeps the screens 'whatever the statistics show': 'The case for them never rested on a single study.' So even a study that found no effect would not, on the author's view, be a reason to take them down.",
+ r={"a": "The author agrees: 'Nor would a precise result settle what the screen is usually cited for', and a manager's interview 'cannot screen off the candidate'.",
+    "b": "The author agrees: the error includes 'treating the confidence of those who repeat a finding as though it were part of the evidence for it'.",
+    "c": "The author agrees: a committee that can see a candidate can be swayed by her appearance, and the screen leaves 'the music, which is the thing being judged, untouched'."},
+ src="CLAT 2023 Q127 ('Which of the following is the author most likely to disagree with?'). The three 'agree' options are inferences rather than lifted sentences, and the key is a counterfactual. Disagree questions reverse the usual check, as NOT questions do.")
+EX[25] = dict(why="A doctor sees 22 patients an hour, about 5.5 every fifteen minutes. Seven bookings per fifteen-minute slot, with a quarter staying away, bring about 5.25 patients: arrivals are spread out and roughly match capacity, so waits shorten while the number seen stays about the same (walk-ins fill any gap).",
+ r={"b": "Arithmetic slip. Twenty-two bookings in a half-hour is the doctor's hourly rate packed into half the time: about 16 arrivals against a capacity of 11, so queues grow.",
+    "c": "Moves the wait from walk-ins to booked patients without shortening it overall.",
+    "d": "Registration already takes under three minutes; it is not the bottleneck."},
+ src="CLAT 2024 Q101 ('What could be a possible solution …?') and CLAT 2025 Q106, with numbers to check. Two options are slot schemes, and only the arithmetic separates them.")
+EX[26]["r"]["a"] = "The registers, however carefully checked, show only that doctors sign in by 9:00 a.m., not when they start seeing patients. A late start remains possible, so this is not the least likely cause."
