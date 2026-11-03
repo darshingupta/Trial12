@@ -9,9 +9,17 @@ Two CLAT sectionals in the question types CLAT set from 2022 to 2026, pitched on
 
 Marking is +1 / −0.25 / 0.
 
+## Online tests
+
+- RC: https://claude.ai/artifact/TbN324oGmYjwMp9qYSDcSJ
+- LR-CR: https://claude.ai/artifact/3fDUDeapkfQ73ig8TBTdR8
+
+Each test saves your attempt (answers, time, score and the trap behind each miss) so it can be reviewed afterwards.
+
 ## Files
 
 - `RC_Step_Up_Sectional_Paper.docx` and `LR_CR_Step_Up_Sectional_Paper.docx`: question booklets with an answer sheet. No answers anywhere inside.
+- `*_Complete.docx`: paper and key in one document (the key starts after the answer sheet). `.doc` copies of all three are for older versions of Word.
 - `RC_Step_Up_Sectional_Answer_Key.docx` and `LR_CR_Step_Up_Sectional_Answer_Key.docx`. Each key contains:
   - answers at a glance;
   - the CLAT 2022–2026 type survey the paper is built on;
@@ -34,3 +42,10 @@ cd source && python3 build.py rc .. && python3 build.py lr ..
 ## How the papers were checked
 
 Each paper was blind-solved by an independent solver, working without the key, in rounds. The solver flagged any question with two defensible answers, any error, any easy question and any tell. Every flagged question was rebuilt or replaced and then solved again blind. The answer key's "Blind-solve audit" section records what each round found and what changed.
+
+| | Rounds | Easy questions (first round → final) | Hard questions (final) | Solver's verdict |
+|---|---|---|---|---|
+| RC | 4 | about 12 → 2 | 3 | one clear step above CL Countdown |
+| LR-CR | 4 | about 12 → 0 clearly Easy, 5 borderline | 1, plus 4 upper-Medium | one step above CL Countdown |
+
+In every round the solver's answers matched the key, and the final versions have no question with two defensible answers.

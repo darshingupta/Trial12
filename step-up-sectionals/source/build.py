@@ -84,6 +84,13 @@ def build_html():
         assert a in t, a
         t = t.replace(a, b)
     assert "__" not in t.replace("__proto__", ""), "unfilled placeholder"
+    # publish-ready: drop the hosting skeleton (the Artifact publisher adds its own)
+    first, rest = t.split("\n", 1)
+    if first.lower().startswith("<!doctype"):
+        t = rest
+    t = t.rstrip()
+    if t.endswith("</body></html>"):
+        t = t[: -len("</body></html>")].rstrip() + "\n"
     open(os.path.join(OUT, META["prefix"] + ".html"), "w").write(t)
 
 
