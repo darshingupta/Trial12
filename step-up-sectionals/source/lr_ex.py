@@ -171,3 +171,21 @@ EX[25] = dict(why="A doctor sees 22 patients an hour, about 5.5 every fifteen mi
     "d": "Registration already takes under three minutes; it is not the bottleneck."},
  src="CLAT 2024 Q101 ('What could be a possible solution …?') and CLAT 2025 Q106, with numbers to check. Two options are slot schemes, and only the arithmetic separates them.")
 EX[26]["r"]["a"] = "The registers, however carefully checked, show only that doctors sign in by 9:00 a.m., not when they start seeing patients. A late start remains possible, so this is not the least likely cause."
+
+# ---------------------------------------------------------------- round-3 replacements (after the third blind solve)
+EX[12]["why"] = "The strongroom was empty and locked from 8:00 p.m., and the only way in after that, before anyone was inside, was the opening from outside at 1:14 a.m. Mr. Jain was in the building by then (the camera's 1:25 a.m. is 1:10 a.m. in true time), so the earliest he could have been inside the strongroom after 8:00 p.m. is 1:14 a.m."
+EX[14] = dict(why="The camera films only the building's single entrance (Fact 7), and Ravi was inside the building from 8:00 p.m. to 7:00 a.m., so he never had to pass it. His absence from the recordings says nothing about where he went inside the building, including the strongroom.",
+ r={"a": "There are no recordings of Ravi to misfile. The fast clock changes the times stamped on recordings, not who appears in them.",
+    "b": "The log records only which card opened the door from outside (Fact 2). It shows nothing about who went in, and openings from inside are not logged at all.",
+    "c": "The key hung in his room, not in the strongroom, and anyone in the building could have taken it. Where a key is kept puts no one at the scene."},
+ src="CLAT 2026 Q93 ('Identifying the logical flaw in the argument'). Each wrong option names a real feature of the facts (the fast clock, the log, the master key) that does not touch this argument. Flaw and role questions run at 54.5% in your CR.")
+EX[24] = dict(why="If a third more patients came to the OPD over the same eight months, longer waits could follow whatever the booking system. That rival cause is big enough to account for a rise of 25 minutes in the median.",
+ r={"a": "Hospitals using the same two-hour blocks seeing waits rise points to the blocks. It supports the claim.",
+    "b": "A rival cause, but far too small: a few minutes a year cannot explain a 25-minute rise in eight months.",
+    "d": "Walk-ins suffering most fits the system's rule that they wait for booked patients. It supports the claim."},
+ src="CLAT 2023 Q113 and Q121 ('would most weaken the author's argument about why …'). Two options offer rival causes; only one is large enough to matter.")
+EX[26] = dict(why="Before the increase the hospital took 48 bookings per doctor per block. With a quarter staying away, about 36 came, against the 44 a doctor can see in two hours. So booked arrivals did not outnumber capacity in those months, and this cannot have lengthened the waits.",
+ r={"a": "The registers show only that doctors sign in by 9:00 a.m., however carefully they are checked, not when consultations start. A late start remains possible.",
+    "c": "Most booked patients arrive within fifteen minutes of their block's start, and that was true from the start of online booking. It probably added to the wait.",
+    "d": "Walk-ins wait behind every booked patient present; that rule applied from the start and lengthens their wait."},
+ src="CLAT 2025 Q86 ('which of the following is the least likely a cause …?'), with the arithmetic doing the ruling out. The attendance-register option is the trap: it looks ruled out but is not.")

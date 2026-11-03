@@ -5,6 +5,7 @@ MINUTES = 32
 
 
 
+
 P = []
 
 
@@ -38,7 +39,7 @@ dict(type="Weaken",
  o=["Students who work in the evenings to pay their fees make up only a small share of all those barred from examinations",
     "In several other colleges as well, students above the 75 per cent line scored higher than the students below it",
     "Attendance among the second-years, after falling by a fifth, returned within three years to the level it had reached under the rule",
-    "Second-years who stopped attending later failed the final-year papers built on those courses twice as often as comparable students from compulsory years"],
+    "Second-years who stopped attending later failed the final-year papers built on their second-year courses twice as often as comparable students from compulsory years"],
  ans="d", traps={"a": "T", "b": "N", "c": "L"}),
 dict(type="Must be true",
  stem="If the information in the passage is correct, which of the following must necessarily be true of the large college mentioned in the first paragraph?",
@@ -99,7 +100,7 @@ dict(type="Most effective course of action",
  o=["A one-time subsidy that halves the price of a machine that sows into stubble, for any farmer who buys one",
     "Withdrawing free electricity from farms, so that each extra hour of pumping costs the farmer something",
     "Heavy fines on any farmer whose field is seen burning, enforced through the satellite records of fires",
-    "A pool of such machines for hire, scheduled around each area's harvest so that smallholders can use one in time"],
+    "A pool of stubble-sowing machines for hire, scheduled around each area's harvest so that smallholders can use one in time"],
  ans="d", traps={"a": "P", "b": "T", "c": "T"}),
 ]))
 
@@ -126,7 +127,7 @@ dict(type="Must be true",
     "Mr. Kohli keyed in the PIN at 1:14 a.m., and it was he who swiped Ms. Rao's card at the strongroom door"],
  ans="b", traps={"a": "K", "c": "K", "d": "K"}),
 dict(type="Time window",
- stem="What is the earliest time at which Mr. Jain could have been inside the strongroom?",
+ stem="What is the earliest time after 8:00 p.m. at which Mr. Jain could have been inside the strongroom?",
  o=["1:10 a.m.",
     "1:25 a.m.",
     "1:14 a.m.",
@@ -141,11 +142,11 @@ dict(type="Which fact must be incorrect",
  ans="a", traps={"b": "M", "c": "K", "d": "K"}),
 dict(type="Flaw in an argument",
  stem="A detective argues: 'Ravi appears in none of the camera's recordings that night. So he was never near the strongroom and can have had no part in the leak.' Which of the following best describes the flaw in this argument?",
- o=["It relies on a camera whose clock runs fifteen minutes fast, so its recordings cannot show who was in the building",
-    "It assumes that Ravi did not know the PIN, though the facts leave open that Mr. Kohli had told it to him",
-    "It ignores that the master key to Ms. Rao's drawer was kept in Ravi's room, which shows that he took part",
+ o=["It ignores that the camera's fast clock may have filed Ravi's recordings under the wrong hour of the night",
+    "It overlooks that the strongroom's log, not the camera, is the record that shows who went into the strongroom",
+    "It ignores that the master key to Ms. Rao's drawer was kept in Ravi's room, a fact that by itself puts him at the scene",
     "It reads silence in a record of the entrance as proof of where Ravi was, though he was inside all night"],
- ans="d", traps={"a": "M", "b": "L", "c": "X"}),
+ ans="d", traps={"a": "M", "b": "T", "c": "X"}),
 dict(type="Most reasonable inference",
  stem="Considering all the established facts, which of the following is the most reasonable inference?",
  o=["Mr. Kohli and Mr. Jain carried out the leak together, Mr. Kohli opening the door and Mr. Jain taking the photographs",
@@ -241,10 +242,10 @@ dict(type="Critical difference",
 dict(type="Weaken",
  stem="Which of the following, if true, would most weaken the claim that the online booking system is responsible for the longer waits?",
  o=["Median waits at three other district hospitals that also adopted two-hour booking blocks rose over the same months",
-    "Many patients complain that the hospital's new booking website is slow, confusing and hard to use on a mobile phone",
+    "Waits at the hospital had been creeping up by a few minutes a year for a decade before online booking began",
     "Over the same eight months, the number of patients coming to the OPD rose by a third after a nearby clinic closed",
     "The rise in waiting times was largest among walk-in patients, who are seen only after all the booked patients in each block"],
- ans="c", traps={"a": "L", "b": "T", "d": "L"}),
+ ans="c", traps={"a": "L", "b": "N", "d": "L"}),
 dict(type="Most effective solution",
  stem="Which of the following would most effectively shorten waiting times without reducing the number of patients the OPD sees?",
  o=["Fifteen-minute slots, each booked with about seven patients, so that after no-shows roughly five arrive for every slot",
@@ -253,11 +254,11 @@ dict(type="Most effective solution",
     "Opening a second registration counter at the gate so that patients can be registered faster as they arrive each morning"],
  ans="a", traps={"b": "M", "c": "L", "d": "T"}),
 dict(type="Least likely cause",
- stem="Based on the information gathered, which of the following is LEAST likely to have contributed to the longer waits?",
+ stem="Waits had already begun to lengthen before the hospital raised its bookings to 60. Which of the following is LEAST likely to have contributed to the longer waits in those first five months?",
  o=["Doctors starting their consultations some time after they sign in at 9:00 a.m.",
-    "Slower handling of patients at the registration counter than before the change",
-    "Booked patients arriving together at the start of each two-hour block",
-    "Bookings that, once no-shows are allowed for, roughly fill each doctor's capacity"],
+    "Booked patients who turned up outnumbering what a doctor could see in a block",
+    "Booked patients arriving together within minutes of the start of their block",
+    "Walk-in patients having to wait until every booked patient present had been seen"],
  ans="b", traps={"a": "E", "c": "E", "d": "E"}),
 ]))
 
@@ -314,3 +315,10 @@ META = {
   "C": "AILET misses that treated a correlation as a cause ('home cooking causes a direct improvement')."
  }
 }
+
+META["audit"] = [
+ "Round 1 (first draft). The blind solver matched all 26 keys but found two errors. In the deduction set, Ms. Rao could have taken her card out before 8:00 p.m., which broke the 'must' in Q11. In the hospital case, 'walk-ins are two-fifths of those seen' contradicted the capacity figures. About 12 questions were rated Easy.",
+ "Repairs after round 1. Facts 6 and 7 were tightened and the door was made self-locking. The case data were corrected and a booking fee added. Q12, Q14 and Q16 were replaced, and 14 other questions were rebuilt.",
+ "Round 2. All keys matched and the loophole was closed, but 11 questions were still Easy and none Hard. Q11 had a person-versus-method tell, Q14 had twin options and overlapped Q12–13, and Q18's 'agree' options were lifted sentences. Q11, Q14, Q18 and Q25 were rebuilt, Q1 and Q10 were paraphrased, and Facts 6 and 7 were tightened again.",
+ "Round 3. All keys matched, and Q11 became a genuinely Hard must-be-true question. Seven questions were Easy, and Q12's stem lacked a time frame. Q12 was fixed, Q14's distractors were replaced with plausible ones, Q26 was rebuilt as an arithmetic 'least likely' question, and Q24 gained a second, weaker rival cause.",
+]
